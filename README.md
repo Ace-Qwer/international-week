@@ -1,0 +1,1 @@
+This is a simple SMS warning system using educated weather predictions based on an API and historical data.
