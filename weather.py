@@ -1,4 +1,5 @@
 import requests
+import pandas as pd
 
 API_KEY = "6471d6b96a0646ab81f90409261703"  
 
@@ -39,48 +40,35 @@ locations = [
     ("Mjini Magharibi", -6.1600, 39.2000),
 ]
 
+# 2. Define the Function FIRST
 def fetch_forecast(city, lat, lon):
     url = "https://api.weatherapi.com/v1/forecast.json"
-    params = {
-        "key": API_KEY,
-        "q": f"{lat},{lon}",
-        "days": 3,
-        "aqi": "no",
-        "alerts": "no"
-    }
+    params = {"key": API_KEY, "q": f"{lat},{lon}", "days": 3}
     response = requests.get(url, params=params)
     return response.json() if response.status_code == 200 else None
 
+# 3. NOW run the loop to fill the AI data list
+all_weather_data = []
+
 for city, lat, lon in locations:
     data = fetch_forecast(city, lat, lon)
-    if not data:
-        print(f" Could not fetch data for {city}")
-        continue
+    if data:
+        forecast_day = data.get("forecast", {}).get("forecastday", [])[0]["day"]
+        current = data.get("current", {})
+        
+        all_weather_data.append({
+            "city": city,
+            "avg_temp": forecast_day.get('avgtemp_c'),
+            "max_temp": forecast_day.get('maxtemp_c'),
+            "total_precip": forecast_day.get('totalprecip_mm'),
+            "humidity": current.get('humidity'),
+            "condition_text": current.get('condition', {}).get('text')
+        })
 
-    print("\n======================")
-    print(f"{city}")
-    location_info = data.get("location", {})
-    print(f"Local Time: {location_info.get('localtime')}")
-
-    # Current weather
-    current = data.get("current", {})
-    print("Current Weather:")
-    print(f"  Temp: {current.get('temp_c')}°C")
-    print(f"  Condition: {current.get('condition', {}).get('text')}")
-    print(f"  Wind: {current.get('wind_kph')} kph")
-    print(f"  Precip: {current.get('precip_mm')} mm")
-
-    # 3‑Day Forecast
-    forecast_days = data.get("forecast", {}).get("forecastday", [])
-    print("3‑Day Forecast:")
-    for day in forecast_days:
-        date = day["date"]
-        day_info = day["day"]
-        print(f"  {date}:")
-        print(f"    Avg Temp: {day_info.get('avgtemp_c')}°C")
-        print(f"    Max Temp: {day_info.get('maxtemp_c')}°C")
-        print(f"    Min Temp: {day_info.get('mintemp_c')}°C")
-        print(f"    Condition: {day_info.get('condition', {}).get('text')}")
-        print(f"    Total Precip: {day_info.get('totalprecip_mm')} mm")
-
-    print("======================")
+# 4. Final step: Create the table for XGBoost
+df = pd.DataFrame(all_weather_data)
+if df.empty:
+    print("CRITICAL: No weather data was collected. AI training aborted.")
+else:
+    print(f"Success: Collected data for {len(df)} Tanzanian regions.")
+print(df.head())
