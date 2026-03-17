@@ -28,7 +28,10 @@ class WeatherAlertSystemXML:
 
     def add_region(self, name, number, region):
         """Add a region placeholder for alerts."""
+        if any(entry.get("region") == region for entry in self.regions):
+            return False
         self.regions.append({"name": name, "number": number, "region": region})
+        return True
 
     def determine_event(self, weather):
         """Determine alert type based on temperature, precipitation, or condition."""

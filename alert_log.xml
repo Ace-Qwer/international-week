@@ -8,7 +8,31 @@
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -26,7 +50,31 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Farmer>Lina</Farmer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -44,6 +92,18 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Arusha</Region>
     
     
@@ -53,7 +113,31 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -71,6 +155,18 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   
@@ -80,11 +176,35 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
 
   
   
   
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -98,7 +218,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Farmer>Lina</Farmer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -112,6 +256,18 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Arusha</Region>
     
     
@@ -119,7 +275,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -134,6 +314,18 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   
@@ -144,7 +336,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -158,7 +374,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Farmer>Lina</Farmer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -172,6 +412,18 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Arusha</Region>
     
     
@@ -179,7 +431,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -194,6 +470,18 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   
@@ -201,10 +489,34 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
 
   
   
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -214,12 +526,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Arusha</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -231,6 +579,18 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -238,7 +598,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -248,12 +632,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Mbeya</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -265,6 +685,18 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -272,7 +704,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -282,12 +738,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Zanzibar</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -299,6 +791,18 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -306,7 +810,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -316,12 +844,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Tanga</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -333,6 +897,18 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -340,7 +916,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -350,12 +950,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Kigoma</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -367,6 +1003,18 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -374,7 +1022,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -384,12 +1056,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Sumbawanga</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -401,6 +1109,18 @@ Condition: Patchy light rain in area with thunder
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -408,7 +1128,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -418,12 +1162,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Songea</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -435,6 +1215,18 @@ Condition: Light rain
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -442,7 +1234,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -452,12 +1268,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Kahama</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -469,6 +1321,18 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -476,7 +1340,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -486,12 +1374,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Singida</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -503,6 +1427,18 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -510,7 +1446,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -520,12 +1480,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Rukwa</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -537,6 +1533,18 @@ Condition: Patchy light rain in area with thunder
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -544,7 +1552,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -554,12 +1586,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Ruvuma</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -571,6 +1639,18 @@ Condition: Light rain
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -578,7 +1658,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -588,12 +1692,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Katavi</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -605,6 +1745,18 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
@@ -612,7 +1764,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -622,12 +1798,48 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Region>Songwe</Region>
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -639,9 +1851,33 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -651,7 +1887,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Timestamp>2026-03-17T12:40:58.950609</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -661,7 +1921,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -673,9 +1957,33 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -685,7 +1993,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Timestamp>2026-03-17T12:40:58.950680</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -695,7 +2027,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -707,9 +2063,33 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -719,7 +2099,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Timestamp>2026-03-17T12:40:58.950693</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -729,7 +2133,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -741,9 +2169,33 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -753,7 +2205,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Timestamp>2026-03-17T12:40:58.950705</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -763,7 +2239,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -775,9 +2275,33 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
   
   
   </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -787,7 +2311,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Timestamp>2026-03-17T12:40:58.950716</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -797,7 +2345,31 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -805,6 +2377,6030 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     <Message>Region: Mjini Magharibi
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.6°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.805736</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Arusha</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Arusha
+⚠️ Weather Alert: RAIN
+Current Temp: 26.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.805922</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Mbeya</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Mbeya
+⚠️ Weather Alert: RAIN
+Current Temp: 20.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.805952</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Zanzibar</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Zanzibar
+⚠️ Weather Alert: RAIN
+Current Temp: 30.6°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806005</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Tanga</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Tanga
+⚠️ Weather Alert: RAIN
+Current Temp: 30.0°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806082</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kigoma</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kigoma
+⚠️ Weather Alert: RAIN
+Current Temp: 25.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806198</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Sumbawanga</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Sumbawanga
+⚠️ Weather Alert: RAIN
+Current Temp: 20.7°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806246</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Songea</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Songea
+⚠️ Weather Alert: RAIN
+Current Temp: 21.2°C
+Condition: Light rain
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806270</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kahama</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kahama
+⚠️ Weather Alert: RAIN
+Current Temp: 27.6°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806566</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Singida</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Singida
+⚠️ Weather Alert: RAIN
+Current Temp: 24.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806616</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Rukwa</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Rukwa
+⚠️ Weather Alert: RAIN
+Current Temp: 20.7°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806656</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Ruvuma</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Ruvuma
+⚠️ Weather Alert: RAIN
+Current Temp: 21.3°C
+Condition: Light rain
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806728</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Katavi</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Katavi
+⚠️ Weather Alert: RAIN
+Current Temp: 25.7°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806799</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Songwe</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Songwe
+⚠️ Weather Alert: RAIN
+Current Temp: 22.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806928</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Njombe</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Njombe
+⚠️ Weather Alert: RAIN
+Current Temp: 27.7°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.806998</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kaskazini Unguja</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kaskazini Unguja
+⚠️ Weather Alert: RAIN
+Current Temp: 30.0°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.807049</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kusini Pemba</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kusini Pemba
+⚠️ Weather Alert: RAIN
+Current Temp: 29.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.807087</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kaskazini Pemba</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kaskazini Pemba
+⚠️ Weather Alert: RAIN
+Current Temp: 29.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T12:50:30.807123</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Mjini Magharibi</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Mjini Magharibi
+⚠️ Weather Alert: RAIN
+Current Temp: 30.6°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103749</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Arusha</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Arusha
+⚠️ Weather Alert: RAIN
+Current Temp: 26.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103778</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Mbeya</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Mbeya
+⚠️ Weather Alert: RAIN
+Current Temp: 20.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103793</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Zanzibar</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Zanzibar
+⚠️ Weather Alert: RAIN
+Current Temp: 30.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103810</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Tanga</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Tanga
+⚠️ Weather Alert: RAIN
+Current Temp: 30.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103822</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kigoma</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kigoma
+⚠️ Weather Alert: RAIN
+Current Temp: 25.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103838</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Sumbawanga</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Sumbawanga
+⚠️ Weather Alert: RAIN
+Current Temp: 20.7°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103851</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Songea</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Songea
+⚠️ Weather Alert: RAIN
+Current Temp: 21.2°C
+Condition: Light rain
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103884</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kahama</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kahama
+⚠️ Weather Alert: RAIN
+Current Temp: 27.4°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103905</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Singida</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Singida
+⚠️ Weather Alert: RAIN
+Current Temp: 24.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103918</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Rukwa</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Rukwa
+⚠️ Weather Alert: RAIN
+Current Temp: 20.7°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103930</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Ruvuma</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Ruvuma
+⚠️ Weather Alert: RAIN
+Current Temp: 21.2°C
+Condition: Light rain
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103944</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Katavi</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Katavi
+⚠️ Weather Alert: RAIN
+Current Temp: 25.2°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103957</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Songwe</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Songwe
+⚠️ Weather Alert: RAIN
+Current Temp: 22.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103979</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Njombe</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Njombe
+⚠️ Weather Alert: RAIN
+Current Temp: 27.7°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.103993</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kaskazini Unguja</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kaskazini Unguja
+⚠️ Weather Alert: RAIN
+Current Temp: 30.0°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.104005</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kusini Pemba</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kusini Pemba
+⚠️ Weather Alert: RAIN
+Current Temp: 29.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.104018</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kaskazini Pemba</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kaskazini Pemba
+⚠️ Weather Alert: RAIN
+Current Temp: 29.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:07:48.104030</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Mjini Magharibi</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Mjini Magharibi
+⚠️ Weather Alert: RAIN
+Current Temp: 30.6°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Arusha</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Arusha
+⚠️ Weather Alert: RAIN
+Current Temp: 26.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Mbeya</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Mbeya
+⚠️ Weather Alert: RAIN
+Current Temp: 20.7°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Zanzibar</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Zanzibar
+⚠️ Weather Alert: RAIN
+Current Temp: 30.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Tanga</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Tanga
+⚠️ Weather Alert: RAIN
+Current Temp: 30.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kigoma</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kigoma
+⚠️ Weather Alert: RAIN
+Current Temp: 25.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Sumbawanga</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Sumbawanga
+⚠️ Weather Alert: RAIN
+Current Temp: 20.4°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Songea</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Songea
+⚠️ Weather Alert: RAIN
+Current Temp: 21.2°C
+Condition: Light rain
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kahama</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kahama
+⚠️ Weather Alert: RAIN
+Current Temp: 27.4°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Singida</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Singida
+⚠️ Weather Alert: RAIN
+Current Temp: 24.5°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Rukwa</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Rukwa
+⚠️ Weather Alert: RAIN
+Current Temp: 20.4°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Ruvuma</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Ruvuma
+⚠️ Weather Alert: RAIN
+Current Temp: 21.2°C
+Condition: Light rain
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Katavi</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Katavi
+⚠️ Weather Alert: RAIN
+Current Temp: 25.2°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Songwe</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Songwe
+⚠️ Weather Alert: RAIN
+Current Temp: 22.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Njombe</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Njombe
+⚠️ Weather Alert: RAIN
+Current Temp: 28.4°C
+Condition: Light rain shower
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kaskazini Unguja</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kaskazini Unguja
+⚠️ Weather Alert: RAIN
+Current Temp: 30.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kusini Pemba</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kusini Pemba
+⚠️ Weather Alert: RAIN
+Current Temp: 29.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kaskazini Pemba</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kaskazini Pemba
+⚠️ Weather Alert: RAIN
+Current Temp: 29.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:06.126968</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Mjini Magharibi</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Mjini Magharibi
+⚠️ Weather Alert: RAIN
+Current Temp: 30.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Arusha</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Arusha
+⚠️ Weather Alert: RAIN
+Current Temp: 26.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Mbeya</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Mbeya
+⚠️ Weather Alert: RAIN
+Current Temp: 20.7°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Zanzibar</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Zanzibar
+⚠️ Weather Alert: RAIN
+Current Temp: 30.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Tanga</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Tanga
+⚠️ Weather Alert: RAIN
+Current Temp: 30.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kigoma</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kigoma
+⚠️ Weather Alert: RAIN
+Current Temp: 25.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Sumbawanga</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Sumbawanga
+⚠️ Weather Alert: RAIN
+Current Temp: 20.4°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Songea</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Songea
+⚠️ Weather Alert: RAIN
+Current Temp: 21.2°C
+Condition: Light rain
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kahama</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kahama
+⚠️ Weather Alert: RAIN
+Current Temp: 27.4°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Singida</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Singida
+⚠️ Weather Alert: RAIN
+Current Temp: 24.5°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Rukwa</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Rukwa
+⚠️ Weather Alert: RAIN
+Current Temp: 20.4°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Ruvuma</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Ruvuma
+⚠️ Weather Alert: RAIN
+Current Temp: 21.2°C
+Condition: Light rain
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Katavi</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Katavi
+⚠️ Weather Alert: RAIN
+Current Temp: 25.2°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Songwe</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Songwe
+⚠️ Weather Alert: RAIN
+Current Temp: 22.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Njombe</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Njombe
+⚠️ Weather Alert: RAIN
+Current Temp: 28.4°C
+Condition: Light rain shower
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kaskazini Unguja</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kaskazini Unguja
+⚠️ Weather Alert: RAIN
+Current Temp: 30.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kusini Pemba</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kusini Pemba
+⚠️ Weather Alert: RAIN
+Current Temp: 29.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Kaskazini Pemba</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Kaskazini Pemba
+⚠️ Weather Alert: RAIN
+Current Temp: 29.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Mjini Magharibi</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Mjini Magharibi
+⚠️ Weather Alert: RAIN
+Current Temp: 30.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:28:58.539351</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Arusha</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Arusha
+⚠️ Weather Alert: RAIN
+Current Temp: 26.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:28:58.539351</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Mbeya</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Mbeya
+⚠️ Weather Alert: RAIN
+Current Temp: 20.7°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:28:58.540351</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Zanzibar</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Zanzibar
+⚠️ Weather Alert: RAIN
+Current Temp: 30.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+  
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T13:28:58.540351</Timestamp>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Region>Tanga</Region>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    
+    
+    <Message>Region: Tanga
+⚠️ Weather Alert: RAIN
+Current Temp: 30.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+    
+  
+  
+  
+  
+  </Alert>
+  
+  
+  
+  
+
+  
+  
+  
+  <Alert>
+    
+    
+    
+    
+    
+    
+    <Timestamp>2026-03-17T14:42:44.829684</Timestamp>
+    
+    
+    
+    
+    
+    
+    <Region>Mpanda</Region>
+    
+    
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    
+    
+    <Message>Region: Mpanda
+⚠️ Weather Alert: RAIN
+Current Temp: 26.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+    
+    
+  
+  
+  
+  </Alert>
+  
+  
+  
+
+  
+  
+  <Alert>
+    
+    
+    
+    
+    <Timestamp>2026-03-17T15:01:30.686041</Timestamp>
+    
+    
+    
+    
+    <Region>Kigoma</Region>
+    
+    
+    
+    
+    <Event>rain</Event>
+    
+    
+    
+    
+    <Message>Region: Kigoma
+⚠️ Weather Alert: RAIN
+Current Temp: 25.7°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
@@ -819,7 +8415,29 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   <Alert>
     
     
-    <Timestamp>2026-03-17T12:50:30.805736</Timestamp>
+    <Timestamp>2026-03-17T15:13:39.114617</Timestamp>
+    
+    
+    <Region>Kilimanjaro</Region>
+    
+    
+    <Event>rain</Event>
+    
+    
+    <Message>Region: Kilimanjaro
+⚠️ Weather Alert: RAIN
+Current Temp: 30.2°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+  
+  </Alert>
+  
+  
+  <Alert>
+    
+    
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
     
     
     <Region>Arusha</Region>
@@ -830,7 +8448,7 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     <Message>Region: Arusha
 ⚠️ Weather Alert: RAIN
-Current Temp: 26.5°C
+Current Temp: 24.8°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
@@ -841,7 +8459,7 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   <Alert>
     
     
-    <Timestamp>2026-03-17T12:50:30.805922</Timestamp>
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
     
     
     <Region>Mbeya</Region>
@@ -852,7 +8470,7 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     <Message>Region: Mbeya
 ⚠️ Weather Alert: RAIN
-Current Temp: 20.9°C
+Current Temp: 20.4°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
@@ -863,51 +8481,7 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   <Alert>
     
     
-    <Timestamp>2026-03-17T12:50:30.805952</Timestamp>
-    
-    
-    <Region>Zanzibar</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Zanzibar
-⚠️ Weather Alert: RAIN
-Current Temp: 30.6°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.806005</Timestamp>
-    
-    
-    <Region>Tanga</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Tanga
-⚠️ Weather Alert: RAIN
-Current Temp: 30.0°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.806082</Timestamp>
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
     
     
     <Region>Kigoma</Region>
@@ -917,160 +8491,6 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     <Message>Region: Kigoma
-⚠️ Weather Alert: RAIN
-Current Temp: 25.9°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.806198</Timestamp>
-    
-    
-    <Region>Sumbawanga</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Sumbawanga
-⚠️ Weather Alert: RAIN
-Current Temp: 20.7°C
-Condition: Patchy light rain in area with thunder
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.806246</Timestamp>
-    
-    
-    <Region>Songea</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Songea
-⚠️ Weather Alert: RAIN
-Current Temp: 21.2°C
-Condition: Light rain
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.806270</Timestamp>
-    
-    
-    <Region>Kahama</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Kahama
-⚠️ Weather Alert: RAIN
-Current Temp: 27.6°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.806566</Timestamp>
-    
-    
-    <Region>Singida</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Singida
-⚠️ Weather Alert: RAIN
-Current Temp: 24.5°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.806616</Timestamp>
-    
-    
-    <Region>Rukwa</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Rukwa
-⚠️ Weather Alert: RAIN
-Current Temp: 20.7°C
-Condition: Patchy light rain in area with thunder
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.806656</Timestamp>
-    
-    
-    <Region>Ruvuma</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Ruvuma
-⚠️ Weather Alert: RAIN
-Current Temp: 21.3°C
-Condition: Light rain
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.806728</Timestamp>
-    
-    
-    <Region>Katavi</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Katavi
 ⚠️ Weather Alert: RAIN
 Current Temp: 25.7°C
 Condition: Patchy rain nearby
@@ -1083,7 +8503,161 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   <Alert>
     
     
-    <Timestamp>2026-03-17T12:50:30.806799</Timestamp>
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
+    <Region>Moshi</Region>
+    
+    
+    <Event>rain</Event>
+    
+    
+    <Message>Region: Moshi
+⚠️ Weather Alert: RAIN
+Current Temp: 30.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+  
+  </Alert>
+  
+  
+  <Alert>
+    
+    
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
+    <Region>Sumbawanga</Region>
+    
+    
+    <Event>rain</Event>
+    
+    
+    <Message>Region: Sumbawanga
+⚠️ Weather Alert: RAIN
+Current Temp: 20.1°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+  
+  </Alert>
+  
+  
+  <Alert>
+    
+    
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
+    <Region>Mpanda</Region>
+    
+    
+    <Event>rain</Event>
+    
+    
+    <Message>Region: Mpanda
+⚠️ Weather Alert: RAIN
+Current Temp: 26.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+  
+  </Alert>
+  
+  
+  <Alert>
+    
+    
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
+    <Region>Tabora</Region>
+    
+    
+    <Event>rain</Event>
+    
+    
+    <Message>Region: Tabora
+⚠️ Weather Alert: RAIN
+Current Temp: 28.2°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+  
+  </Alert>
+  
+  
+  <Alert>
+    
+    
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
+    <Region>Singida</Region>
+    
+    
+    <Event>rain</Event>
+    
+    
+    <Message>Region: Singida
+⚠️ Weather Alert: RAIN
+Current Temp: 22.3°C
+Condition: Patchy light rain in area with thunder
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+  
+  </Alert>
+  
+  
+  <Alert>
+    
+    
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
+    <Region>Rukwa</Region>
+    
+    
+    <Event>rain</Event>
+    
+    
+    <Message>Region: Rukwa
+⚠️ Weather Alert: RAIN
+Current Temp: 19.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+  
+  </Alert>
+  
+  
+  <Alert>
+    
+    
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
+    <Region>Manyara</Region>
+    
+    
+    <Event>rain</Event>
+    
+    
+    <Message>Region: Manyara
+⚠️ Weather Alert: RAIN
+Current Temp: 27.9°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
+  
+  </Alert>
+  
+  
+  <Alert>
+    
+    
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
     
     
     <Region>Songwe</Region>
@@ -1094,8 +8668,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     <Message>Region: Songwe
 ⚠️ Weather Alert: RAIN
-Current Temp: 22.9°C
-Condition: Patchy rain nearby
+Current Temp: 21.4°C
+Condition: Patchy light rain in area with thunder
 Action: Ensure drainage is clear and crops are protected.</Message>
     
   
@@ -1105,18 +8679,18 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   <Alert>
     
     
-    <Timestamp>2026-03-17T12:50:30.806928</Timestamp>
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
     
     
-    <Region>Njombe</Region>
+    <Region>Kilimanjaro</Region>
     
     
     <Event>rain</Event>
     
     
-    <Message>Region: Njombe
+    <Message>Region: Kilimanjaro
 ⚠️ Weather Alert: RAIN
-Current Temp: 27.7°C
+Current Temp: 30.2°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
@@ -1127,51 +8701,7 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   <Alert>
     
     
-    <Timestamp>2026-03-17T12:50:30.806998</Timestamp>
-    
-    
-    <Region>Kaskazini Unguja</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Kaskazini Unguja
-⚠️ Weather Alert: RAIN
-Current Temp: 30.0°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.807049</Timestamp>
-    
-    
-    <Region>Kusini Pemba</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Kusini Pemba
-⚠️ Weather Alert: RAIN
-Current Temp: 29.1°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.807087</Timestamp>
+    <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
     
     
     <Region>Kaskazini Pemba</Region>
@@ -1182,29 +8712,7 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     <Message>Region: Kaskazini Pemba
 ⚠️ Weather Alert: RAIN
-Current Temp: 29.1°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-    
-  
-  </Alert>
-  
-  
-  <Alert>
-    
-    
-    <Timestamp>2026-03-17T12:50:30.807123</Timestamp>
-    
-    
-    <Region>Mjini Magharibi</Region>
-    
-    
-    <Event>rain</Event>
-    
-    
-    <Message>Region: Mjini Magharibi
-⚠️ Weather Alert: RAIN
-Current Temp: 30.6°C
+Current Temp: 29.0°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
@@ -1213,182 +8721,12 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
 
   <Alert>
-    <Timestamp>2026-03-17T13:07:48.103749</Timestamp>
+    <Timestamp>2026-03-17T15:46:56.962748</Timestamp>
     <Region>Arusha</Region>
     <Event>rain</Event>
     <Message>Region: Arusha
 ⚠️ Weather Alert: RAIN
-Current Temp: 26.5°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103778</Timestamp>
-    <Region>Mbeya</Region>
-    <Event>rain</Event>
-    <Message>Region: Mbeya
-⚠️ Weather Alert: RAIN
-Current Temp: 20.9°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103793</Timestamp>
-    <Region>Zanzibar</Region>
-    <Event>rain</Event>
-    <Message>Region: Zanzibar
-⚠️ Weather Alert: RAIN
-Current Temp: 30.5°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103810</Timestamp>
-    <Region>Tanga</Region>
-    <Event>rain</Event>
-    <Message>Region: Tanga
-⚠️ Weather Alert: RAIN
-Current Temp: 30.1°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103822</Timestamp>
-    <Region>Kigoma</Region>
-    <Event>rain</Event>
-    <Message>Region: Kigoma
-⚠️ Weather Alert: RAIN
-Current Temp: 25.9°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103838</Timestamp>
-    <Region>Sumbawanga</Region>
-    <Event>rain</Event>
-    <Message>Region: Sumbawanga
-⚠️ Weather Alert: RAIN
-Current Temp: 20.7°C
-Condition: Patchy light rain in area with thunder
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103851</Timestamp>
-    <Region>Songea</Region>
-    <Event>rain</Event>
-    <Message>Region: Songea
-⚠️ Weather Alert: RAIN
-Current Temp: 21.2°C
-Condition: Light rain
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103884</Timestamp>
-    <Region>Kahama</Region>
-    <Event>rain</Event>
-    <Message>Region: Kahama
-⚠️ Weather Alert: RAIN
-Current Temp: 27.4°C
-Condition: Patchy light rain in area with thunder
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103905</Timestamp>
-    <Region>Singida</Region>
-    <Event>rain</Event>
-    <Message>Region: Singida
-⚠️ Weather Alert: RAIN
-Current Temp: 24.5°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103918</Timestamp>
-    <Region>Rukwa</Region>
-    <Event>rain</Event>
-    <Message>Region: Rukwa
-⚠️ Weather Alert: RAIN
-Current Temp: 20.7°C
-Condition: Patchy light rain in area with thunder
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103930</Timestamp>
-    <Region>Ruvuma</Region>
-    <Event>rain</Event>
-    <Message>Region: Ruvuma
-⚠️ Weather Alert: RAIN
-Current Temp: 21.2°C
-Condition: Light rain
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103944</Timestamp>
-    <Region>Katavi</Region>
-    <Event>rain</Event>
-    <Message>Region: Katavi
-⚠️ Weather Alert: RAIN
-Current Temp: 25.2°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103957</Timestamp>
-    <Region>Songwe</Region>
-    <Event>rain</Event>
-    <Message>Region: Songwe
-⚠️ Weather Alert: RAIN
-Current Temp: 22.4°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103979</Timestamp>
-    <Region>Njombe</Region>
-    <Event>rain</Event>
-    <Message>Region: Njombe
-⚠️ Weather Alert: RAIN
-Current Temp: 27.7°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.103993</Timestamp>
-    <Region>Kaskazini Unguja</Region>
-    <Event>rain</Event>
-    <Message>Region: Kaskazini Unguja
-⚠️ Weather Alert: RAIN
-Current Temp: 30.0°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.104005</Timestamp>
-    <Region>Kusini Pemba</Region>
-    <Event>rain</Event>
-    <Message>Region: Kusini Pemba
-⚠️ Weather Alert: RAIN
-Current Temp: 29.1°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.104018</Timestamp>
-    <Region>Kaskazini Pemba</Region>
-    <Event>rain</Event>
-    <Message>Region: Kaskazini Pemba
-⚠️ Weather Alert: RAIN
-Current Temp: 29.1°C
-Condition: Patchy rain nearby
-Action: Ensure drainage is clear and crops are protected.</Message>
-  </Alert>
-  <Alert>
-    <Timestamp>2026-03-17T13:07:48.104030</Timestamp>
-    <Region>Mjini Magharibi</Region>
-    <Event>rain</Event>
-    <Message>Region: Mjini Magharibi
-⚠️ Weather Alert: RAIN
-Current Temp: 30.6°C
+Current Temp: 24.8°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
   </Alert>

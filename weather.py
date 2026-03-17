@@ -1,7 +1,7 @@
 import requests
-import pandas as pd
+import os
 
-API_KEY = "6471d6b96a0646ab81f90409261703"  
+API_KEY = os.getenv("WEATHER_API_KEY", "6471d6b96a0646ab81f90409261703")
 
 # Expanded list of Tanzanian locations (cities and regional capitals)
 locations = [
@@ -40,35 +40,56 @@ locations = [
     ("Mjini Magharibi", -6.1600, 39.2000),
 ]
 
-# 2. Define the Function FIRST
 def fetch_forecast(city, lat, lon):
     url = "https://api.weatherapi.com/v1/forecast.json"
     params = {"key": API_KEY, "q": f"{lat},{lon}", "days": 3}
-    response = requests.get(url, params=params)
+    try:
+        response = requests.get(url, params=params, timeout=12)
+    except requests.RequestException:
+        return None
     return response.json() if response.status_code == 200 else None
 
-# 3. NOW run the loop to fill the AI data list
-all_weather_data = []
 
-for city, lat, lon in locations:
-    data = fetch_forecast(city, lat, lon)
-    if data:
-        forecast_day = data.get("forecast", {}).get("forecastday", [])[0]["day"]
+def collect_weather_data():
+    all_weather_data = []
+    for city, lat, lon in locations:
+        data = fetch_forecast(city, lat, lon)
+        if not data:
+            continue
+
+        forecast_days = data.get("forecast", {}).get("forecastday", [])
+        if not forecast_days:
+            continue
+
+        forecast_day = forecast_days[0].get("day", {})
         current = data.get("current", {})
-        
-        all_weather_data.append({
-            "city": city,
-            "avg_temp": forecast_day.get('avgtemp_c'),
-            "max_temp": forecast_day.get('maxtemp_c'),
-            "total_precip": forecast_day.get('totalprecip_mm'),
-            "humidity": current.get('humidity'),
-            "condition_text": current.get('condition', {}).get('text')
-        })
 
-# 4. Final step: Create the table for XGBoost
-df = pd.DataFrame(all_weather_data)
-if df.empty:
-    print("CRITICAL: No weather data was collected. AI training aborted.")
-else:
-    print(f"Success: Collected data for {len(df)} Tanzanian regions.")
-print(df.head())
+        all_weather_data.append(
+            {
+                "city": city,
+                "avg_temp": forecast_day.get("avgtemp_c"),
+                "max_temp": forecast_day.get("maxtemp_c"),
+                "total_precip": forecast_day.get("totalprecip_mm"),
+                "humidity": current.get("humidity"),
+                "condition_text": current.get("condition", {}).get("text"),
+            }
+        )
+    return all_weather_data
+
+
+def build_weather_dataframe():
+    try:
+        import pandas as pd
+    except ImportError:
+        raise ImportError("pandas is required for dataframe features. Install with: pip install pandas")
+
+    return pd.DataFrame(collect_weather_data())
+
+
+if __name__ == "__main__":
+    df = build_weather_dataframe()
+    if df.empty:
+        print("CRITICAL: No weather data was collected. AI training aborted.")
+    else:
+        print(f"Success: Collected data for {len(df)} Tanzanian regions.")
+    print(df.head())

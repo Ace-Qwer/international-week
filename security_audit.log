@@ -1,0 +1,7 @@
+2026-03-17 15:45:38 | user=admin | status=OK | action=LOGIN_SUCCESS | city=- | event=- | detail=dashboard_access_granted
+2026-03-17 15:45:38 | user=admin | status=OK | action=DASHBOARD_LOGIN | city=- | event=- | detail=dashboard_opened
+2026-03-17 15:46:30 | user=admin | status=OK | action=LOGIN_SUCCESS | city=- | event=- | detail=dashboard_access_granted
+2026-03-17 15:46:31 | user=admin | status=OK | action=DASHBOARD_LOGIN | city=- | event=- | detail=dashboard_opened
+2026-03-17 15:46:44 | user=admin | status=OK | action=REFRESH_COMPLETE | city=- | event=- | detail=loaded=33;total=33;flagged=15
+2026-03-17 15:46:54 | user=admin | status=WARN | action=SEND_SELECTED_BLOCKED | city=- | event=- | detail=no_region_selected
+2026-03-17 15:46:57 | user=admin | status=ALERT | action=ALERT_SENT | city=Arusha | event=rain | detail=source=send_selected
