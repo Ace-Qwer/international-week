@@ -1,8 +1,9 @@
 from datetime import datetime
 import xml.etree.ElementTree as ET
+import os
 
 class WeatherAlertSystemXML:
-    """Send weather alerts to farmers and log them to XML."""
+    """Send weather alerts to farmers and log them to XML (append mode)."""
 
     ADVICE = {
         "flood": "Move livestock to higher ground and protect crops from water damage.",
@@ -16,17 +17,23 @@ class WeatherAlertSystemXML:
     def __init__(self, xml_filename="alert_log.xml"):
         self.farmers = []  # List of {"name", "number", "region"}
         self.xml_filename = xml_filename
-        self.root = ET.Element("Alerts")
+
+        # Load existing XML or create root if file doesn't exist
+        if os.path.exists(xml_filename):
+            self.tree = ET.parse(xml_filename)
+            self.root = self.tree.getroot()
+        else:
+            self.root = ET.Element("Alerts")
+            self.tree = ET.ElementTree(self.root)
 
     def add_farmer(self, name, number, region):
         self.farmers.append({"name": name, "number": number, "region": region})
 
     def determine_event(self, weather):
-        """Determine alert type based on temperature, precipitation, or condition."""
         temp = weather.get("temp_c")
         precip = weather.get("precip_mm", 0)
         condition = weather.get("condition", {})
-        condition_text = condition.get("text", "").lower()  # Extract only the text
+        condition_text = condition.get("text", "").lower()
 
         if "storm" in condition_text:
             return "storm"
@@ -44,10 +51,9 @@ class WeatherAlertSystemXML:
             return None
 
     def create_alert(self, farmer, event, weather):
-        """Create personalized alert using only the text of the condition."""
         temp = weather.get("temp_c")
         condition = weather.get("condition", {})
-        condition_text = condition.get("text", "Unknown")  # Only text
+        condition_text = condition.get("text", "Unknown")
         advice = self.ADVICE.get(event, "Stay alert and monitor conditions.")
 
         message = (
@@ -60,7 +66,6 @@ class WeatherAlertSystemXML:
         return message
 
     def log_to_xml(self, farmer, event, message):
-        """Log a sent message to the XML structure."""
         alert = ET.SubElement(self.root, "Alert")
         ET.SubElement(alert, "Timestamp").text = datetime.now().isoformat()
         ET.SubElement(alert, "Farmer").text = farmer['name']
@@ -70,13 +75,13 @@ class WeatherAlertSystemXML:
         ET.SubElement(alert, "Message").text = message
 
     def save_xml(self):
-        """Write the XML file with pretty formatting."""
+        """Save XML to file, appending to existing alerts."""
         from xml.dom import minidom
         xml_str = ET.tostring(self.root, 'utf-8')
         pretty_xml = minidom.parseString(xml_str).toprettyxml(indent="  ")
         with open(self.xml_filename, "w", encoding="utf-8") as f:
             f.write(pretty_xml)
-        print(f"Alerts saved to {self.xml_filename}")
+        print(f"Alerts saved (appended) to {self.xml_filename}")
 
     def send_alerts(self, weather_by_region):
         """Send alerts to all farmers based on current weather."""
