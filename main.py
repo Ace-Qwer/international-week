@@ -1,6 +1,6 @@
 from weather import locations, fetch_forecast
 from alerts import WeatherAlertSystemXML
-
+from module import AgriIntelligence
 # Example farmers
 farmers = [
     {"name": "Maria", "number": "+1234567890", "region": "Dar es Salaam"},
