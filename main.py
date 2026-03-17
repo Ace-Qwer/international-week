@@ -4,8 +4,15 @@ Login-protected admin dashboard.  Visual style based on MAIN_STYLE.py.
 """
 import math
 import os
+import csv
+import hashlib
+import hmac
+import json
+import platform
+import secrets
 import threading
 import time
+import uuid
 from datetime import datetime
 
 import tkinter as tk
@@ -15,11 +22,11 @@ from alerts import WeatherAlertSystemXML
 from weather import fetch_forecast, locations
 
 # ── Auth ──────────────────────────────────────────────────────────────────────
-CREDENTIALS = {"admin": "admin123", "farmer": "farm2026"}
 MAX_LOGIN_ATTEMPTS = 5
 LOCKOUT_SECONDS = 30
 SECURITY_LOG_FILE = os.path.join(
     os.path.dirname(__file__), "security_audit.log")
+USERS_FILE = os.path.join(os.path.dirname(__file__), "users.json")
 
 # ── Palette (deep-blue dark with sharp colors) ──────────────────────────────
 C = {
@@ -48,6 +55,79 @@ DANGER_EVENTS = {"storm", "flood", "heatwave"}
 POSSIBLE_EVENTS = {"cold_snap", "drought", "rain"}
 
 
+def _hash_password(password, salt=None):
+    salt = salt or secrets.token_hex(16)
+    hashed = hashlib.pbkdf2_hmac(
+        "sha256", password.encode("utf-8"), salt.encode("utf-8"), 120000
+    )
+    return {"salt": salt, "hash": hashed.hex()}
+
+
+def _verify_password(password, record):
+    if not isinstance(record, dict) or "salt" not in record or "hash" not in record:
+        return False
+    calc = _hash_password(password, salt=record["salt"])["hash"]
+    return hmac.compare_digest(calc, record.get("hash", ""))
+
+
+def _ensure_user_store():
+    if os.path.exists(USERS_FILE):
+        try:
+            with open(USERS_FILE, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+            if isinstance(payload, dict) and isinstance(payload.get("users"), list):
+                return
+        except Exception:
+            pass
+
+    seed_users = [
+        {"username": "admin", "password": "admin123", "role": "admin"},
+        {"username": "farmer", "password": "farm2026", "role": "analyst"},
+        {"username": "viewer", "password": "viewer123", "role": "viewer"},
+    ]
+    users = []
+    for user in seed_users:
+        users.append(
+            {
+                "username": user["username"],
+                "role": user["role"],
+                "password": _hash_password(user["password"]),
+            }
+        )
+    with open(USERS_FILE, "w", encoding="utf-8") as f:
+        json.dump({"users": users}, f, ensure_ascii=True, indent=2)
+
+
+def _authenticate_user(username, password):
+    _ensure_user_store()
+    try:
+        with open(USERS_FILE, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return None
+
+    for user in payload.get("users", []):
+        if user.get("username") != username:
+            continue
+        if _verify_password(password, user.get("password")):
+            return {"username": username, "role": user.get("role", "viewer")}
+        return None
+    return None
+
+
+def _parse_audit_line(line):
+    parts = [p.strip() for p in line.split("|")]
+    entry = {"raw": line}
+    if parts:
+        entry["timestamp"] = parts[0]
+    for part in parts[1:]:
+        if "=" not in part:
+            continue
+        k, v = part.split("=", 1)
+        entry[k.strip()] = v.strip()
+    return entry
+
+
 def _wx_icon(text):
     t = text.lower()
     for k, v in WEATHER_ICONS.items():
@@ -72,11 +152,22 @@ def _event_level(event):
     return "safe"
 
 
-def audit_log(user, action, status="INFO", city="-", event="-", detail=""):
+def audit_log(
+    user,
+    action,
+    status="INFO",
+    city="-",
+    event="-",
+    detail="",
+    role="-",
+    session_id="-",
+):
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    source = f"{platform.node()}:{os.getpid()}"
     line = (
         f"{ts} | user={user or '-'} | status={status} | action={action} "
-        f"| city={city} | event={event} | detail={detail}\n"
+        f"| role={role} | session={session_id} | city={city} "
+        f"| event={event} | source={source} | detail={detail}\n"
     )
     try:
         with open(SECURITY_LOG_FILE, "a", encoding="utf-8") as f:
@@ -226,12 +317,13 @@ class RegionCard(tk.Frame):
             bg=C["selected"] if sel else C["card"],
         )
 
-    def update_weather(self, weather, event):
+    def update_weather(self, weather, event, risk_score=0):
         if not weather:
             return
         temp  = weather.get("temp_c", "—")
         feels = weather.get("feelslike_c", "—")
         cond  = weather.get("condition", {}).get("text", "N/A")
+        cached = bool(weather.get("_cached"))
         hum   = weather.get("humidity", "—")
         wind  = weather.get("wind_kph", "—")
         uv    = weather.get("uv", "—")
@@ -239,25 +331,27 @@ class RegionCard(tk.Frame):
 
         self._icon.config(text=_wx_icon(cond))
         self._temp.config(text=f"{temp}°C")
-        self._cond.config(text=f"{cond}  ·  Feels {feels}°C")
+        cache_note = "  ·  Cached" if cached else ""
+        self._cond.config(text=f"{cond}  ·  Feels {feels}°C{cache_note}")
 
         for k, (var, unit) in self._meta.items():
             val = {"Humidity": hum, "Wind": wind, "UV": uv, "Pressure": pres}[k]
             var.set(f"{val}{unit}")
 
         level = _event_level(event)
+        risk_txt = f"Risk {int(risk_score):02d}/100"
         if level == "danger":
-            self._badge.config(text=f"⛔  DANGER • {event.upper()}",
+            self._badge.config(text=f"⛔  DANGER • {event.upper()} • {risk_txt}",
                                fg=C["danger"], bg="#2a1a1a")
             if not self._selected:
                 self.configure(highlightbackground=C["danger"])
         elif level == "possible":
-            self._badge.config(text=f"⚠  POSSIBLE DANGER • {event.upper()}",
+            self._badge.config(text=f"⚠  POSSIBLE DANGER • {event.upper()} • {risk_txt}",
                                fg=C["warn"], bg="#2a2000")
             if not self._selected:
                 self.configure(highlightbackground=C["warn"])
         else:
-            self._badge.config(text="✓  SAFE", fg=C["ok"], bg=C["bg3"])
+            self._badge.config(text=f"✓  SAFE • {risk_txt}", fg=C["ok"], bg=C["bg3"])
             if not self._selected:
                 self.configure(highlightbackground=C["border"])
 
@@ -357,11 +451,12 @@ class LoginScreen(tk.Frame):
                       detail=f"lockout_active={left}s")
             return
 
-        if CREDENTIALS.get(user) == pwd:
+        auth = _authenticate_user(user, pwd)
+        if auth:
             self._failed_attempts = 0
             audit_log(user=user, action="LOGIN_SUCCESS", status="OK",
-                      detail="dashboard_access_granted")
-            self._on_success(user)
+                      role=auth["role"], detail="dashboard_access_granted")
+            self._on_success(auth)
         else:
             self._failed_attempts += 1
             left = MAX_LOGIN_ATTEMPTS - self._failed_attempts
@@ -387,16 +482,21 @@ class LoginScreen(tk.Frame):
 #  Dashboard
 # ══════════════════════════════════════════════════════════════════════════════
 class Dashboard(tk.Frame):
-    def __init__(self, master, username, on_logout):
+    def __init__(self, master, username, role, on_logout):
         super().__init__(master, bg=C["bg"])
         self.username    = username
+        self.role        = role
+        self.session_id  = uuid.uuid4().hex[:10]
         self._on_logout  = on_logout
         self._selected   = None
         self._cards      = {}
         self._cache      = {}   # city → weather dict
         self._events     = {}   # city → event str
+        self._risk_scores = {}  # city -> int
+        self._risk_factors = {} # city -> list[str]
         self._busy       = False
         self._auto_after = None
+        self._last_refresh_ts = None
 
         master.title("Farmer Alert — Admin Dashboard")
         master.geometry("1280x820")
@@ -416,6 +516,14 @@ class Dashboard(tk.Frame):
         self.master.after(200, self._bring_front)
         self.master.after(400, lambda: threading.Thread(
             target=self._fetch_all, daemon=True).start())
+
+    def _can(self, action):
+        allowed = {
+            "admin": {"refresh", "auto_send", "send_selected", "send_all", "export"},
+            "analyst": {"refresh", "auto_send", "send_selected", "export"},
+            "viewer": {"refresh", "export"},
+        }
+        return action in allowed.get(self.role, set())
 
     # ── TTK dark scrollbars ────────────────────────────────────────────────────
     def _apply_ttk_styles(self):
@@ -468,7 +576,7 @@ class Dashboard(tk.Frame):
                  bg=C["bg2"], fg=C["ok"]).pack(side="left")
 
         # user badge
-        tk.Label(right, text=f"👤  {self.username.upper()}",
+        tk.Label(right, text=f"👤  {self.username.upper()} ({self.role.upper()})",
                  font=("Courier New", 10, "bold"),
                  bg=C["bg2"], fg=C["accent2"]).pack(side="left", padx=(0, 16))
 
@@ -503,9 +611,10 @@ class Dashboard(tk.Frame):
         self._sc_alert = StatCard(inner, "Danger",         color=C["danger"])
         self._sc_warn  = StatCard(inner, "Possible Danger", color=C["warn"])
         self._sc_clear = StatCard(inner, "Safe",           color=C["ok"])
+        self._sc_risk  = StatCard(inner, "Avg Risk",       color=C["accent"])
 
         for i, w in enumerate([self._sc_total, self._sc_alert,
-                                self._sc_warn, self._sc_clear]):
+                    self._sc_warn, self._sc_clear, self._sc_risk]):
             w.grid(row=0, column=i, sticky="nsew", padx=1, pady=1)
             inner.columnconfigure(i, weight=1)
 
@@ -628,6 +737,11 @@ class Dashboard(tk.Frame):
                  bg=C["bg2"], fg=C["accent2"], wraplength=220,
                  justify="left").pack(anchor="w", padx=14, pady=(0, 10))
 
+        self._ins_data_age = tk.StringVar(value="Data age: waiting for first refresh")
+        tk.Label(parent, textvariable=self._ins_data_age, font=("Courier New", 8),
+             bg=C["bg2"], fg=C["muted"], wraplength=220,
+             justify="left").pack(anchor="w", padx=14, pady=(0, 10))
+
         tk.Button(parent, text="Focus Highest Risk", font=("Courier New", 9, "bold"),
                   bg=C["accent"], fg="#000", relief="flat", bd=0,
                   activebackground=C["accent2"], activeforeground="#000",
@@ -739,17 +853,23 @@ class Dashboard(tk.Frame):
 
         kw = dict(font=("Helvetica", 11), bd=0, cursor="hand2",
                   padx=12, pady=6, relief="flat")
-        for txt, bg, fg, active_bg, cmd in [
-            ("↻ Refresh All",       C["accent"],  "#000", C["accent2"],       self._refresh_async),
-            ("⚠ Auto Alerts",       C["danger"],  "#fff", "#ff5555",          self._auto_send),
-            ("⚠ Send Selected",     C["warn"],    "#000", "#ffdd00",          self._send_selected),
-            ("⚠ Send All",          C["danger"],  "#fff", "#ff5555",          self._send_all),
+        self._action_buttons = {}
+        for txt, key, bg, fg, active_bg, cmd in [
+            ("↻ Refresh All",       "refresh",      C["accent"],  "#000", C["accent2"],       self._refresh_async),
+            ("⚠ Auto Alerts",       "auto_send",    C["danger"],  "#fff", "#ff5555",          self._auto_send),
+            ("⚠ Send Selected",     "send_selected", C["warn"],    "#000", "#ffdd00",          self._send_selected),
+            ("⚠ Send All",          "send_all",      C["danger"],  "#fff", "#ff5555",          self._send_all),
         ]:
             b = tk.Button(bar, text=txt, bg=bg, fg=fg,
                           activebackground=active_bg,
                           activeforeground=fg,
                           command=cmd, **kw)
             b.pack(side="right", padx=4)
+            self._action_buttons[key] = b
+
+        for key, btn in self._action_buttons.items():
+            if not self._can(key):
+                btn.configure(state="disabled", bg=C["bg3"], fg=C["muted"])
 
         # auto-refresh toggle
         tk.Frame(bar, bg=C["border"], width=1).pack(side="right",
@@ -800,6 +920,32 @@ class Dashboard(tk.Frame):
                                 font=("Courier New", 9), bd=0,
                                 highlightthickness=0, wrap="none",
                                 state="disabled")
+        ctl = tk.Frame(t2, bg=C["bg2"])
+        ctl.pack(fill="x", padx=4, pady=(4, 0))
+
+        tk.Label(ctl, text="Status", font=("Courier New", 8),
+             bg=C["bg2"], fg=C["muted"]).pack(side="left")
+        self._sec_status = tk.StringVar(value="ALL")
+        ttk.Combobox(ctl, width=10, state="readonly",
+                 textvariable=self._sec_status,
+                 values=["ALL", "OK", "WARN", "ALERT", "INFO"]).pack(side="left", padx=(4, 8))
+
+        tk.Label(ctl, text="Find", font=("Courier New", 8),
+             bg=C["bg2"], fg=C["muted"]).pack(side="left")
+        self._sec_query = tk.StringVar(value="")
+        tk.Entry(ctl, textvariable=self._sec_query, width=24,
+             bg=C["bg3"], fg=C["text"], insertbackground=C["text"],
+             relief="flat", bd=0).pack(side="left", padx=(4, 8), ipady=3)
+
+        tk.Button(ctl, text="Apply", font=("Courier New", 8, "bold"),
+              bg=C["bg3"], fg=C["text"], relief="flat", bd=0,
+              cursor="hand2", command=self._render_security_log).pack(side="left", padx=(0, 8))
+        tk.Button(ctl, text="Export CSV", font=("Courier New", 8, "bold"),
+              bg=C["accent"], fg="#000", relief="flat", bd=0,
+              cursor="hand2", command=self._export_security_csv).pack(side="right")
+
+        self._sec_entries = []
+
         ls2 = ttk.Scrollbar(t2, orient="vertical", command=self._sec_txt.yview)
         self._sec_txt.configure(yscrollcommand=ls2.set)
         ls2.pack(side="right", fill="y", padx=(0, 4))
@@ -819,6 +965,9 @@ class Dashboard(tk.Frame):
     # ── Helpers ────────────────────────────────────────────────────────────────
     def _tick(self):
         self._clock_var.set(time.strftime("%H:%M:%S"))
+        if self._last_refresh_ts:
+            age = int(time.time() - self._last_refresh_ts)
+            self._ins_data_age.set(f"Data age: {age}s")
         self.after(1000, self._tick)
 
     def _bring_front(self):
@@ -841,33 +990,70 @@ class Dashboard(tk.Frame):
         self._log_txt.configure(state="disabled")
 
     def _load_security_log_tail(self):
+        self._sec_entries = []
         for ln in read_audit_tail(limit=300):
+            self._sec_entries.append(_parse_audit_line(ln))
+        self._render_security_log()
+
+    def _filtered_security_entries(self):
+        status = self._sec_status.get().strip().upper()
+        query = self._sec_query.get().strip().lower()
+        out = []
+        for entry in self._sec_entries:
+            if status != "ALL" and entry.get("status", "").upper() != status:
+                continue
+            raw = entry.get("raw", "").lower()
+            if query and query not in raw:
+                continue
+            out.append(entry)
+        return out
+
+    def _render_security_log(self):
+        self._sec_txt.configure(state="normal")
+        self._sec_txt.delete("1.0", "end")
+        for entry in self._filtered_security_entries():
+            ln = entry.get("raw", "")
             tag = "info"
-            if "| status=OK |" in ln:
+            if entry.get("status") == "OK":
                 tag = "ok"
-            elif "| status=WARN |" in ln:
+            elif entry.get("status") == "WARN":
                 tag = "warn"
-            elif "| status=ALERT |" in ln:
+            elif entry.get("status") == "ALERT":
                 tag = "err"
-            self._sec_txt.configure(state="normal")
             self._sec_txt.insert("end", ln + "\n", tag)
-            self._sec_txt.configure(state="disabled")
         self._sec_txt.see("end")
+        self._sec_txt.configure(state="disabled")
+
+    def _export_security_csv(self):
+        if not self._can("export"):
+            messagebox.showwarning("Permission", "Your role cannot export security logs.")
+            return
+        rows = self._filtered_security_entries()
+        if not rows:
+            messagebox.showinfo("Export", "No rows match current filter.")
+            return
+        out = os.path.join(
+            os.path.dirname(__file__),
+            f"security_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+        )
+        fields = [
+            "timestamp", "user", "status", "action", "role", "session",
+            "city", "event", "source", "detail",
+        ]
+        with open(out, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=fields)
+            writer.writeheader()
+            for row in rows:
+                writer.writerow({k: row.get(k, "") for k in fields})
+        self._log(f"Security export created: {os.path.basename(out)}", "ok")
+        messagebox.showinfo("Export complete", f"Saved: {out}")
 
     def _sec_log(self, action, status="INFO", city="-", event="-", detail=""):
         line = audit_log(user=self.username, action=action, status=status,
-                         city=city, event=event, detail=detail)
-        tag = "info"
-        if status == "OK":
-            tag = "ok"
-        elif status == "WARN":
-            tag = "warn"
-        elif status == "ALERT":
-            tag = "err"
-        self._sec_txt.configure(state="normal")
-        self._sec_txt.insert("end", line + "\n", tag)
-        self._sec_txt.see("end")
-        self._sec_txt.configure(state="disabled")
+                         city=city, event=event, detail=detail,
+                         role=self.role, session_id=self.session_id)
+        self._sec_entries.append(_parse_audit_line(line))
+        self._render_security_log()
 
     def _update_stats(self):
         n      = len(self._alert_sys.regions)
@@ -877,6 +1063,8 @@ class Dashboard(tk.Frame):
         self._sc_alert.set(alerts)
         self._sc_warn.set(warns)
         self._sc_clear.set(max(n - alerts - warns, 0))
+        avg_risk = int(sum(self._risk_scores.values()) / len(self._risk_scores)) if self._risk_scores else 0
+        self._sc_risk.set(f"{avg_risk}/100")
         self._update_smart_panel()
 
     def _update_chips(self):
@@ -902,25 +1090,28 @@ class Dashboard(tk.Frame):
         if self._selected:
             ev = self._events.get(self._selected)
             level = _event_level(ev)
+            score = self._risk_scores.get(self._selected, 0)
+            factors = ", ".join(self._risk_factors.get(self._selected, []))
             if level == "danger":
-                self._ins_selected.set(f"{self._selected}: DANGER")
-                self._ins_tip.set("Tip: Send alert immediately and monitor every refresh.")
+                self._ins_selected.set(f"{self._selected}: DANGER ({score}/100)")
+                self._ins_tip.set(f"Top factors: {factors}")
             elif level == "possible":
-                self._ins_selected.set(f"{self._selected}: POSSIBLE DANGER")
-                self._ins_tip.set("Tip: Watch closely and send targeted advisory alert.")
+                self._ins_selected.set(f"{self._selected}: POSSIBLE DANGER ({score}/100)")
+                self._ins_tip.set(f"Top factors: {factors}")
             else:
-                self._ins_selected.set(f"{self._selected}: SAFE")
-                self._ins_tip.set("Tip: No immediate action required.")
+                self._ins_selected.set(f"{self._selected}: SAFE ({score}/100)")
+                self._ins_tip.set(f"Top factors: {factors}")
         else:
             self._ins_selected.set("No region selected")
             self._ins_tip.set("Tip: Select a region to see actions.")
 
-        top = danger + possible
+        top = sorted(self._risk_scores.items(), key=lambda x: x[1], reverse=True)[:5]
         for i, var in enumerate(self._ins_top_vars):
             if i < len(top):
-                city = top[i]
-                level = "DANGER" if city in danger else "POSSIBLE"
-                var.set(f"• {city}  ({level})")
+                city, score = top[i]
+                level = _event_level(self._events.get(city))
+                label = "DANGER" if level == "danger" else "POSSIBLE" if level == "possible" else "SAFE"
+                var.set(f"• {city}  ({label}, {score}/100)")
             else:
                 var.set("• —")
 
@@ -951,27 +1142,39 @@ class Dashboard(tk.Frame):
     def _fetch_all(self):
         """Run in background thread. Updates self._cache then schedules UI update."""
         regions = list(self._loc.items())
+        loaded = 0
         for city, (lat, lon) in regions:
             data = fetch_forecast(city, lat, lon)
             if data:
                 cur = data.get("current", {})
+                if data.get("_cached"):
+                    cur["_cached"] = True
+                    cur["_cached_at"] = data.get("_cached_at")
                 self._cache[city] = cur
+                loaded += 1
 
         def apply():
             self._events.clear()
+            self._risk_scores.clear()
+            self._risk_factors.clear()
             for city, wx in self._cache.items():
                 ev = self._alert_sys.determine_event(wx)
                 if ev:
                     self._events[city] = ev
+                score, factors = self._alert_sys.calculate_risk_score(wx, ev)
+                self._risk_scores[city] = score
+                self._risk_factors[city] = factors
             for city, card in self._cards.items():
                 card.update_weather(
                     self._cache.get(city, {}),
-                    self._events.get(city))
+                    self._events.get(city),
+                    self._risk_scores.get(city, 0))
+            if loaded:
+                self._last_refresh_ts = time.time()
             self._update_stats()
             self._update_chips()
             self._reflow()
             n = len(self._events)
-            loaded = len(self._cache)
             total  = len(self._loc)
             self._log(f"Refreshed {loaded}/{total} regions — "
                       f"{n} alert(s) detected",
@@ -994,6 +1197,11 @@ class Dashboard(tk.Frame):
     # ── Actions ────────────────────────────────────────────────────────────────
     def _auto_send(self):
         """Send alerts only to regions that actually need them."""
+        if not self._can("auto_send"):
+            messagebox.showwarning("Permission", "Your role cannot send automatic alerts.")
+            self._sec_log(action="AUTO_SEND_BLOCKED", status="WARN",
+                          detail="permission_denied")
+            return
         if not self._cache:
             messagebox.showinfo("No Data", "Refresh weather data first.")
             self._sec_log(action="AUTO_SEND_BLOCKED", status="WARN",
@@ -1051,6 +1259,11 @@ class Dashboard(tk.Frame):
         self._bg(work, ok, err)
 
     def _send_selected(self):
+        if not self._can("send_selected"):
+            messagebox.showwarning("Permission", "Your role cannot send selected alerts.")
+            self._sec_log(action="SEND_SELECTED_BLOCKED", status="WARN",
+                          detail="permission_denied")
+            return
         if not self._selected:
             messagebox.showinfo("No Selection", "Click a region card to select it.")
             self._sec_log(action="SEND_SELECTED_BLOCKED", status="WARN",
@@ -1081,8 +1294,13 @@ class Dashboard(tk.Frame):
             return msg
 
         def ok(result):
+            score, factors = self._alert_sys.calculate_risk_score(
+                self._cache.get(city, {}), self._events.get(city)
+            )
+            self._risk_scores[city] = score
+            self._risk_factors[city] = factors
             self._cards[city].update_weather(
-                self._cache.get(city, {}), self._events.get(city))
+                self._cache.get(city, {}), self._events.get(city), score)
             self._update_stats()
             self._update_chips()
             if result is None:
@@ -1112,6 +1330,11 @@ class Dashboard(tk.Frame):
         self._bg(work, ok, err)
 
     def _send_all(self):
+        if not self._can("send_all"):
+            messagebox.showwarning("Permission", "Your role cannot send global alerts.")
+            self._sec_log(action="SEND_ALL_BLOCKED", status="WARN",
+                          detail="permission_denied")
+            return
         if not self._cache:
             messagebox.showinfo("No Data", "Refresh weather data first.")
             self._sec_log(action="SEND_ALL_BLOCKED", status="WARN",
@@ -1178,6 +1401,7 @@ class Dashboard(tk.Frame):
 #  Entry point
 # ══════════════════════════════════════════════════════════════════════════════
 def main():
+    _ensure_user_store()
     root = tk.Tk()
     root.configure(bg=C["bg"])
     _current = [None]
@@ -1189,10 +1413,10 @@ def main():
         f.pack(fill="both", expand=True)
         _current[0] = f
 
-    def on_login(username):
+    def on_login(auth_user):
         _current[0].destroy()
         _current[0] = None
-        f = Dashboard(root, username, on_logout=show_login)
+        f = Dashboard(root, auth_user["username"], auth_user["role"], on_logout=show_login)
         f.pack(fill="both", expand=True)
         _current[0] = f
 

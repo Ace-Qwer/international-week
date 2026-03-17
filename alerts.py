@@ -55,6 +55,74 @@ class WeatherAlertSystemXML:
         else:
             return None
 
+    def calculate_risk_score(self, weather, event=None):
+        """Return a 0-100 risk score and the top contributing factors."""
+        score = 0
+        factors = []
+
+        temp = weather.get("temp_c")
+        precip = weather.get("precip_mm", 0)
+        humidity = weather.get("humidity")
+        wind = weather.get("wind_kph")
+        uv = weather.get("uv")
+        condition_text = weather.get("condition", {}).get("text", "").lower()
+
+        if temp is not None:
+            if temp >= 38:
+                score += 35
+                factors.append("extreme heat")
+            elif temp >= 34:
+                score += 22
+                factors.append("high temperature")
+            elif temp <= 7:
+                score += 25
+                factors.append("extreme cold")
+            elif temp <= 12:
+                score += 14
+                factors.append("cold conditions")
+
+        if precip >= 35:
+            score += 30
+            factors.append("very heavy rain")
+        elif precip >= 20:
+            score += 20
+            factors.append("heavy rain")
+        elif precip >= 8:
+            score += 8
+            factors.append("moderate rain")
+
+        if humidity is not None and humidity >= 88:
+            score += 8
+            factors.append("very high humidity")
+
+        if wind is not None and wind >= 45:
+            score += 12
+            factors.append("strong wind")
+
+        if uv is not None and uv >= 8:
+            score += 7
+            factors.append("high UV")
+
+        if "storm" in condition_text or "thunder" in condition_text:
+            score += 35
+            factors.append("storm signal")
+
+        if event == "flood":
+            score += 20
+        elif event == "storm":
+            score += 18
+        elif event == "heatwave":
+            score += 15
+        elif event in {"cold_snap", "drought"}:
+            score += 10
+        elif event == "rain":
+            score += 6
+
+        score = max(0, min(100, score))
+        if not factors:
+            factors = ["stable weather pattern"]
+        return score, factors[:3]
+
     def create_alert(self, region_entry, event, weather):
         """Create alert message for a region."""
         temp = weather.get("temp_c")

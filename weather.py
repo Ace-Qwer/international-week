@@ -1,7 +1,12 @@
-import requests
+import json
 import os
+from datetime import datetime, timezone
 
-API_KEY = os.getenv("WEATHER_API_KEY", "6471d6b96a0646ab81f90409261703")
+import requests
+
+# Prefer environment configuration, but keep legacy fallback so existing installs keep working.
+API_KEY = os.getenv("WEATHER_API_KEY") or "6471d6b96a0646ab81f90409261703"
+CACHE_FILE = os.path.join(os.path.dirname(__file__), "weather_cache.json")
 
 # Expanded list of Tanzanian locations (cities and regional capitals)
 locations = [
@@ -40,14 +45,59 @@ locations = [
     ("Mjini Magharibi", -6.1600, 39.2000),
 ]
 
+def _read_cache():
+    if not os.path.exists(CACHE_FILE):
+        return {}
+    try:
+        with open(CACHE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def _write_cache(payload):
+    try:
+        with open(CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=True, indent=2)
+    except Exception:
+        # Cache persistence should never crash app behavior.
+        pass
+
+
 def fetch_forecast(city, lat, lon):
+    cache = _read_cache()
+    cache_key = city
+    if not API_KEY:
+        # Return cached payload when API key is unavailable.
+        cached = cache.get(cache_key, {})
+        data = cached.get("data")
+        if data:
+            data["_cached"] = True
+            data["_cached_at"] = cached.get("cached_at")
+        return data
+
     url = "https://api.weatherapi.com/v1/forecast.json"
     params = {"key": API_KEY, "q": f"{lat},{lon}", "days": 3}
     try:
         response = requests.get(url, params=params, timeout=12)
     except requests.RequestException:
-        return None
-    return response.json() if response.status_code == 200 else None
+        response = None
+
+    if response and response.status_code == 200:
+        payload = response.json()
+        cache[cache_key] = {
+            "cached_at": datetime.now(timezone.utc).isoformat(),
+            "data": payload,
+        }
+        _write_cache(cache)
+        return payload
+
+    cached = cache.get(cache_key, {})
+    data = cached.get("data")
+    if data:
+        data["_cached"] = True
+        data["_cached_at"] = cached.get("cached_at")
+    return data
 
 
 def collect_weather_data():

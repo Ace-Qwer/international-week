@@ -5,3 +5,63 @@
 2026-03-17 15:46:44 | user=admin | status=OK | action=REFRESH_COMPLETE | city=- | event=- | detail=loaded=33;total=33;flagged=15
 2026-03-17 15:46:54 | user=admin | status=WARN | action=SEND_SELECTED_BLOCKED | city=- | event=- | detail=no_region_selected
 2026-03-17 15:46:57 | user=admin | status=ALERT | action=ALERT_SENT | city=Arusha | event=rain | detail=source=send_selected
+2026-03-17 22:01:16 | user=admin | status=OK | action=LOGIN_SUCCESS | city=- | event=- | detail=dashboard_access_granted
+2026-03-17 22:01:17 | user=admin | status=OK | action=DASHBOARD_LOGIN | city=- | event=- | detail=dashboard_opened
+2026-03-17 22:01:29 | user=admin | status=OK | action=REFRESH_COMPLETE | city=- | event=- | detail=loaded=33;total=33;flagged=10
+2026-03-17 22:02:58 | user=admin | status=INFO | action=REFRESH_START | city=- | event=- | detail=manual_refresh_triggered
+2026-03-17 22:03:11 | user=admin | status=OK | action=REFRESH_COMPLETE | city=- | event=- | detail=loaded=33;total=33;flagged=10
+2026-03-17 22:08:26 | user=admin | status=OK | action=LOGIN_SUCCESS | role=admin | session=- | city=- | event=- | source=DESKTOP-RSL76CS:29424 | detail=dashboard_access_granted
+2026-03-17 22:08:26 | user=admin | status=OK | action=DASHBOARD_LOGIN | role=admin | session=9b0d37a68d | city=- | event=- | source=DESKTOP-RSL76CS:29424 | detail=dashboard_opened
+2026-03-17 22:08:26 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=9b0d37a68d | city=- | event=- | source=DESKTOP-RSL76CS:29424 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:09:23 | user=admin | status=OK | action=LOGIN_SUCCESS | role=admin | session=- | city=- | event=- | source=DESKTOP-RSL76CS:27288 | detail=dashboard_access_granted
+2026-03-17 22:09:24 | user=admin | status=OK | action=DASHBOARD_LOGIN | role=admin | session=893a2b55b4 | city=- | event=- | source=DESKTOP-RSL76CS:27288 | detail=dashboard_opened
+2026-03-17 22:09:24 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=893a2b55b4 | city=- | event=- | source=DESKTOP-RSL76CS:27288 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:10:30 | user=farmer | status=WARN | action=LOGIN_FAILED | role=- | session=- | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=remaining_before_lockout=4
+2026-03-17 22:10:34 | user=farmer | status=WARN | action=LOGIN_FAILED | role=- | session=- | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=remaining_before_lockout=3
+2026-03-17 22:10:47 | user=farmer | status=WARN | action=LOGIN_FAILED | role=- | session=- | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=remaining_before_lockout=2
+2026-03-17 22:11:05 | user=admin | status=OK | action=LOGIN_SUCCESS | role=admin | session=- | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=dashboard_access_granted
+2026-03-17 22:11:06 | user=admin | status=OK | action=DASHBOARD_LOGIN | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=dashboard_opened
+2026-03-17 22:11:06 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:11:11 | user=admin | status=WARN | action=AUTO_SEND_BLOCKED | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=no_weather_cache
+2026-03-17 22:11:13 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=manual_refresh_triggered
+2026-03-17 22:11:13 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:12:20 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=manual_refresh_triggered
+2026-03-17 22:12:20 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:12:27 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=manual_refresh_triggered
+2026-03-17 22:12:27 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:12:28 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=manual_refresh_triggered
+2026-03-17 22:12:28 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:12:29 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=manual_refresh_triggered
+2026-03-17 22:12:29 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:12:29 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=manual_refresh_triggered
+2026-03-17 22:12:29 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:12:29 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=manual_refresh_triggered
+2026-03-17 22:12:29 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:12:30 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=manual_refresh_triggered
+2026-03-17 22:12:30 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:12:30 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=manual_refresh_triggered
+2026-03-17 22:12:30 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:12:30 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=manual_refresh_triggered
+2026-03-17 22:12:30 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:12:41 | user=admin | status=OK | action=LOGOUT | role=admin | session=3dd7441d79 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=user_requested
+2026-03-17 22:12:46 | user=admin | status=OK | action=LOGIN_SUCCESS | role=admin | session=- | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=dashboard_access_granted
+2026-03-17 22:12:47 | user=admin | status=OK | action=DASHBOARD_LOGIN | role=admin | session=27c0905533 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=dashboard_opened
+2026-03-17 22:12:47 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=27c0905533 | city=- | event=- | source=DESKTOP-RSL76CS:28220 | detail=loaded=0;total=33;flagged=0
+2026-03-17 22:16:00 | user=admin | status=OK | action=LOGIN_SUCCESS | role=admin | session=- | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=dashboard_access_granted
+2026-03-17 22:16:00 | user=admin | status=OK | action=DASHBOARD_LOGIN | role=admin | session=179d75fa2e | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=dashboard_opened
+2026-03-17 22:16:17 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=179d75fa2e | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=loaded=33;total=33;flagged=10
+2026-03-17 22:17:19 | user=admin | status=OK | action=LOGOUT | role=admin | session=179d75fa2e | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=user_requested
+2026-03-17 22:17:29 | user=farmer | status=WARN | action=LOGIN_FAILED | role=- | session=- | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=remaining_before_lockout=4
+2026-03-17 22:17:42 | user=farmer | status=OK | action=LOGIN_SUCCESS | role=analyst | session=- | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=dashboard_access_granted
+2026-03-17 22:17:42 | user=farmer | status=OK | action=DASHBOARD_LOGIN | role=analyst | session=2daf442126 | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=dashboard_opened
+2026-03-17 22:17:53 | user=farmer | status=OK | action=AUTO_SEND_SKIPPED | role=analyst | session=2daf442126 | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=no_flagged_regions
+2026-03-17 22:18:00 | user=farmer | status=OK | action=REFRESH_COMPLETE | role=analyst | session=2daf442126 | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=loaded=33;total=33;flagged=10
+2026-03-17 22:18:05 | user=farmer | status=WARN | action=AUTO_SEND_CANCELLED | role=analyst | session=2daf442126 | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=flagged_regions=10
+2026-03-17 22:18:49 | user=farmer | status=OK | action=SEND_SELECTED_SKIPPED | role=analyst | session=2daf442126 | city=Arusha | event=- | source=DESKTOP-RSL76CS:34496 | detail=conditions_safe
+2026-03-17 22:18:55 | user=farmer | status=INFO | action=REFRESH_START | role=analyst | session=2daf442126 | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=manual_refresh_triggered
+2026-03-17 22:18:59 | user=farmer | status=OK | action=LOGOUT | role=analyst | session=2daf442126 | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=user_requested
+2026-03-17 22:19:25 | user=viewer | status=OK | action=LOGIN_SUCCESS | role=viewer | session=- | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=dashboard_access_granted
+2026-03-17 22:19:25 | user=viewer | status=OK | action=DASHBOARD_LOGIN | role=viewer | session=20d1c7cbd9 | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=dashboard_opened
+2026-03-17 22:19:44 | user=viewer | status=OK | action=REFRESH_COMPLETE | role=viewer | session=20d1c7cbd9 | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=loaded=33;total=33;flagged=10
+2026-03-17 22:20:03 | user=viewer | status=INFO | action=REFRESH_START | role=viewer | session=20d1c7cbd9 | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=manual_refresh_triggered
+2026-03-17 22:20:22 | user=viewer | status=OK | action=REFRESH_COMPLETE | role=viewer | session=20d1c7cbd9 | city=- | event=- | source=DESKTOP-RSL76CS:34496 | detail=loaded=33;total=33;flagged=10
