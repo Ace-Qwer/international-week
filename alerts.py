@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import os
 
 class WeatherAlertSystemXML:
-    """Send weather alerts to farmers and log them to XML (append mode)."""
+    """Send weather alerts to regions and log them to XML (append mode)."""
 
     ADVICE = {
         "flood": "Move livestock to higher ground and protect crops from water damage.",
@@ -15,7 +15,7 @@ class WeatherAlertSystemXML:
     }
 
     def __init__(self, xml_filename="alert_log.xml"):
-        self.farmers = []  # List of {"name", "number", "region"}
+        self.regions = []  # List of {"name", "number", "region"}
         self.xml_filename = xml_filename
 
         # Load existing XML or create root if file doesn't exist
@@ -26,10 +26,12 @@ class WeatherAlertSystemXML:
             self.root = ET.Element("Alerts")
             self.tree = ET.ElementTree(self.root)
 
-    def add_farmer(self, name, number, region):
-        self.farmers.append({"name": name, "number": number, "region": region})
+    def add_region(self, name, number, region):
+        """Add a region placeholder for alerts."""
+        self.regions.append({"name": name, "number": number, "region": region})
 
     def determine_event(self, weather):
+        """Determine alert type based on temperature, precipitation, or condition."""
         temp = weather.get("temp_c")
         precip = weather.get("precip_mm", 0)
         condition = weather.get("condition", {})
@@ -50,14 +52,15 @@ class WeatherAlertSystemXML:
         else:
             return None
 
-    def create_alert(self, farmer, event, weather):
+    def create_alert(self, region_entry, event, weather):
+        """Create alert message for a region."""
         temp = weather.get("temp_c")
         condition = weather.get("condition", {})
         condition_text = condition.get("text", "Unknown")
         advice = self.ADVICE.get(event, "Stay alert and monitor conditions.")
 
         message = (
-            f"Hello {farmer['name']} in {farmer['region']}!\n"
+            f"Region: {region_entry['region']}\n"
             f"⚠️ Weather Alert: {event.upper()}\n"
             f"Current Temp: {temp}°C\n"
             f"Condition: {condition_text}\n"
@@ -65,17 +68,15 @@ class WeatherAlertSystemXML:
         )
         return message
 
-    def log_to_xml(self, farmer, event, message):
+    def log_to_xml(self, region_entry, event, message):
         alert = ET.SubElement(self.root, "Alert")
         ET.SubElement(alert, "Timestamp").text = datetime.now().isoformat()
-        ET.SubElement(alert, "Farmer").text = farmer['name']
-        ET.SubElement(alert, "Number").text = farmer['number']
-        ET.SubElement(alert, "Region").text = farmer['region']
+        ET.SubElement(alert, "Region").text = region_entry['region']
         ET.SubElement(alert, "Event").text = event
         ET.SubElement(alert, "Message").text = message
 
     def save_xml(self):
-        """Save XML to file, appending to existing alerts."""
+        """Save XML to file, appending new alerts to existing log."""
         from xml.dom import minidom
         xml_str = ET.tostring(self.root, 'utf-8')
         pretty_xml = minidom.parseString(xml_str).toprettyxml(indent="  ")
@@ -84,14 +85,14 @@ class WeatherAlertSystemXML:
         print(f"Alerts saved (appended) to {self.xml_filename}")
 
     def send_alerts(self, weather_by_region):
-        """Send alerts to all farmers based on current weather."""
-        for farmer in self.farmers:
-            region = farmer['region']
+        """Send alerts to all regions based on current weather."""
+        for region_entry in self.regions:
+            region = region_entry['region']
             weather = weather_by_region.get(region)
             if weather:
                 event = self.determine_event(weather)
                 if event:
-                    message = self.create_alert(farmer, event, weather)
-                    print(f"Sending to {farmer['number']}:\n{message}\n")
-                    self.log_to_xml(farmer, event, message)
+                    message = self.create_alert(region_entry, event, weather)
+                    print(f"Alert for {region}:\n{message}\n")
+                    self.log_to_xml(region_entry, event, message)
         self.save_xml()
