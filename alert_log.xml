@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<Alerts>
+  <Alert>
+    <Timestamp>2026-03-17T10:39:31.125794</Timestamp>
+    <Farmer>Lina</Farmer>
+    <Number>+1122334455</Number>
+    <Region>Arusha</Region>
+    <Event>rain</Event>
+    <Message>Hello Lina in Arusha!
+⚠️ Weather Alert: RAIN
+Current Temp: 25.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+  </Alert>
+</Alerts>

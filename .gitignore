@@ -1,2 +1,5 @@
 # Python
 venv/
+
+# Logs
+./alert_log.xml
