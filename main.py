@@ -19,6 +19,8 @@ import tkinter as tk
 from tkinter import messagebox, ttk
 
 from alerts import WeatherAlertSystemXML
+from incidents import IncidentStore
+from notifications import NotificationDispatcher
 from weather import fetch_forecast, locations
 
 # ── Auth ──────────────────────────────────────────────────────────────────────
@@ -27,6 +29,7 @@ LOCKOUT_SECONDS = 30
 SECURITY_LOG_FILE = os.path.join(
     os.path.dirname(__file__), "security_audit.log")
 USERS_FILE = os.path.join(os.path.dirname(__file__), "users.json")
+MAP_GEOJSON_FILE = os.path.join(os.path.dirname(__file__), "regions.geojson")
 
 # ── Palette (deep-blue dark with sharp colors) ──────────────────────────────
 C = {
@@ -53,6 +56,31 @@ WEATHER_ICONS = {
 
 DANGER_EVENTS = {"storm", "flood", "heatwave"}
 POSSIBLE_EVENTS = {"cold_snap", "drought", "rain"}
+
+# Simplified country outline for a visible basemap behind risk points.
+TANZANIA_OUTLINE = [
+    (29.34, -1.00),
+    (30.50, -1.55),
+    (31.55, -1.20),
+    (32.65, -1.55),
+    (33.90, -1.00),
+    (35.10, -1.45),
+    (36.70, -1.10),
+    (38.20, -2.30),
+    (39.10, -4.50),
+    (40.15, -5.80),
+    (40.40, -8.70),
+    (39.60, -10.20),
+    (38.40, -11.00),
+    (36.50, -11.65),
+    (34.20, -11.75),
+    (32.00, -11.45),
+    (30.90, -10.40),
+    (29.95, -8.40),
+    (29.20, -6.80),
+    (29.05, -4.30),
+    (29.34, -1.00),
+]
 
 
 def _hash_password(password, salt=None):
@@ -126,6 +154,23 @@ def _parse_audit_line(line):
         k, v = part.split("=", 1)
         entry[k.strip()] = v.strip()
     return entry
+
+
+def _ensure_geojson_file():
+    if os.path.exists(MAP_GEOJSON_FILE):
+        return
+    features = []
+    for city, lat, lon in locations:
+        features.append(
+            {
+                "type": "Feature",
+                "properties": {"name": city},
+                "geometry": {"type": "Point", "coordinates": [lon, lat]},
+            }
+        )
+    payload = {"type": "FeatureCollection", "features": features}
+    with open(MAP_GEOJSON_FILE, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=True, indent=2)
 
 
 def _wx_icon(text):
@@ -494,6 +539,8 @@ class Dashboard(tk.Frame):
         self._events     = {}   # city → event str
         self._risk_scores = {}  # city -> int
         self._risk_factors = {} # city -> list[str]
+        self._geo_points = []
+        self._map_canvas = None
         self._busy       = False
         self._auto_after = None
         self._last_refresh_ts = None
@@ -504,6 +551,8 @@ class Dashboard(tk.Frame):
         master.resizable(True, True)
 
         self._alert_sys  = WeatherAlertSystemXML()
+        self._notifier   = NotificationDispatcher()
+        self._incidents  = IncidentStore()
         self._loc        = {city: (lat, lon) for city, lat, lon in locations}
         for city, _, _ in locations:
             self._alert_sys.add_region(name=city,
@@ -519,8 +568,8 @@ class Dashboard(tk.Frame):
 
     def _can(self, action):
         allowed = {
-            "admin": {"refresh", "auto_send", "send_selected", "send_all", "export"},
-            "analyst": {"refresh", "auto_send", "send_selected", "export"},
+            "admin": {"refresh", "auto_send", "send_selected", "send_all", "export", "incident_update"},
+            "analyst": {"refresh", "auto_send", "send_selected", "export", "incident_update"},
             "viewer": {"refresh", "export"},
         }
         return action in allowed.get(self.role, set())
@@ -748,6 +797,11 @@ class Dashboard(tk.Frame):
                   cursor="hand2", padx=10, pady=7,
                   command=self._focus_highest_risk).pack(fill="x", padx=14, pady=(0, 10))
 
+        tk.Button(parent, text="Open Risk Map", font=("Courier New", 9, "bold"),
+              bg=C["bg3"], fg=C["text"], relief="flat", bd=0,
+              cursor="hand2", padx=10, pady=7,
+              command=self._open_map_view).pack(fill="x", padx=14, pady=(0, 10))
+
         tk.Label(parent, text="TOP FLAGGED", font=("Courier New", 8, "bold"),
                  bg=C["bg2"], fg=C["muted"]).pack(anchor="w", padx=14)
         self._ins_top_vars = []
@@ -904,8 +958,10 @@ class Dashboard(tk.Frame):
 
         t1 = tk.Frame(tabs, bg=C["bg2"])
         t2 = tk.Frame(tabs, bg=C["bg2"])
+        t3 = tk.Frame(tabs, bg=C["bg2"])
         tabs.add(t1, text="Activity")
         tabs.add(t2, text="Security")
+        tabs.add(t3, text="Incidents")
 
         self._log_txt = tk.Text(t1, bg=C["bg2"], fg=C["muted"],
                                 font=("Courier New", 10), bd=0,
@@ -961,6 +1017,250 @@ class Dashboard(tk.Frame):
         self._sec_txt.tag_config("err",  foreground=C["danger"])
         self._sec_txt.tag_config("info", foreground=C["accent2"])
         self._load_security_log_tail()
+
+        cols = ("id", "city", "event", "risk", "status", "assignee", "updated")
+        self._inc_tree = ttk.Treeview(t3, columns=cols, show="headings", height=5)
+        self._inc_tree.heading("id", text="ID")
+        self._inc_tree.heading("city", text="City")
+        self._inc_tree.heading("event", text="Event")
+        self._inc_tree.heading("risk", text="Risk")
+        self._inc_tree.heading("status", text="Status")
+        self._inc_tree.heading("assignee", text="Assigned")
+        self._inc_tree.heading("updated", text="Updated")
+        self._inc_tree.column("id", width=70, anchor="center")
+        self._inc_tree.column("city", width=120)
+        self._inc_tree.column("event", width=90, anchor="center")
+        self._inc_tree.column("risk", width=60, anchor="center")
+        self._inc_tree.column("status", width=100, anchor="center")
+        self._inc_tree.column("assignee", width=100)
+        self._inc_tree.column("updated", width=140)
+        self._inc_tree.pack(fill="both", expand=True, padx=6, pady=(6, 4))
+
+        inc_ctl = tk.Frame(t3, bg=C["bg2"])
+        inc_ctl.pack(fill="x", padx=6, pady=(0, 6))
+        tk.Label(inc_ctl, text="Assignee", bg=C["bg2"], fg=C["muted"],
+                 font=("Courier New", 8)).pack(side="left")
+        self._inc_assignee = tk.StringVar(value=self.username)
+        tk.Entry(inc_ctl, textvariable=self._inc_assignee, width=14,
+                 bg=C["bg3"], fg=C["text"], relief="flat", bd=0,
+                 insertbackground=C["text"]).pack(side="left", padx=4, ipady=3)
+        tk.Label(inc_ctl, text="Note", bg=C["bg2"], fg=C["muted"],
+                 font=("Courier New", 8)).pack(side="left")
+        self._inc_note = tk.StringVar(value="")
+        tk.Entry(inc_ctl, textvariable=self._inc_note, width=30,
+                 bg=C["bg3"], fg=C["text"], relief="flat", bd=0,
+                 insertbackground=C["text"]).pack(side="left", padx=4, ipady=3)
+
+        for txt, action in [
+            ("Acknowledge", "acknowledged"),
+            ("Assign", "assigned"),
+            ("Resolve", "resolved"),
+        ]:
+            tk.Button(
+                inc_ctl,
+                text=txt,
+                font=("Courier New", 8, "bold"),
+                bg=C["bg3"],
+                fg=C["text"],
+                relief="flat",
+                bd=0,
+                cursor="hand2",
+                command=lambda s=action: self._update_selected_incident(s),
+            ).pack(side="right", padx=3)
+
+        self._load_incidents()
+
+    def _load_incidents(self):
+        for row in self._inc_tree.get_children():
+            self._inc_tree.delete(row)
+        for inc in self._incidents.list_incidents():
+            self._inc_tree.insert(
+                "",
+                "end",
+                values=(
+                    inc.get("id", ""),
+                    inc.get("city", ""),
+                    str(inc.get("event", "")).upper(),
+                    f"{inc.get('risk_score', 0)}/100",
+                    inc.get("status", ""),
+                    inc.get("assigned_to", ""),
+                    inc.get("updated_at", ""),
+                ),
+            )
+
+    def _selected_incident_id(self):
+        sel = self._inc_tree.selection()
+        if not sel:
+            return None
+        vals = self._inc_tree.item(sel[0], "values")
+        return vals[0] if vals else None
+
+    def _update_selected_incident(self, new_status):
+        if not self._can("incident_update"):
+            messagebox.showwarning("Permission", "Your role cannot update incident state.")
+            return
+        inc_id = self._selected_incident_id()
+        if not inc_id:
+            messagebox.showinfo("Incident", "Select an incident first.")
+            return
+        note = self._inc_note.get().strip()
+        assignee = self._inc_assignee.get().strip()
+        payload = {
+            "status": new_status,
+            "assigned_to": assignee if new_status in {"assigned", "resolved"} else None,
+            "notes": note if new_status != "resolved" else None,
+            "resolution_note": note if new_status == "resolved" else None,
+        }
+        updated = self._incidents.update_incident(inc_id, **payload)
+        if not updated:
+            messagebox.showwarning("Incident", "Incident not found.")
+            return
+        self._sec_log(
+            action="INCIDENT_UPDATED",
+            status="OK",
+            city=updated.get("city", "-"),
+            event=updated.get("event", "-"),
+            detail=f"id={inc_id};status={new_status};assignee={assignee or '-'}",
+        )
+        self._load_incidents()
+
+    def _create_incident_for_alert(self, city, event, source, note=""):
+        score = self._risk_scores.get(city, 0)
+        incident = self._incidents.create_incident(
+            city=city,
+            event=event,
+            risk_score=score,
+            notes=f"source={source}; {note}".strip(),
+            created_by=self.username,
+        )
+        self._sec_log(
+            action="INCIDENT_CREATED",
+            status="WARN",
+            city=city,
+            event=event,
+            detail=f"id={incident['id']};risk={score};source={source}",
+        )
+        self._load_incidents()
+
+    def _dispatch_notifications(self, city, event, message):
+        statuses = self._notifier.send_alert(city, event, message)
+        sent = sum(1 for s in statuses if s.get("status") == "SENT")
+        failed = sum(1 for s in statuses if s.get("status") == "FAILED")
+        skipped = sum(1 for s in statuses if s.get("status") == "SKIPPED")
+        self._sec_log(
+            action="NOTIFY_DISPATCH",
+            status="OK" if sent else "WARN",
+            city=city,
+            event=event,
+            detail=f"sent={sent};failed={failed};skipped={skipped}",
+        )
+        for row in statuses:
+            st = row.get("status", "").upper()
+            level = "OK" if st == "SENT" else "ALERT" if st == "FAILED" else "WARN"
+            self._sec_log(
+                action="DELIVERY_STATUS",
+                status=level,
+                city=city,
+                event=event,
+                detail=(
+                    f"provider={row.get('provider','-')};status={row.get('status','-')};"
+                    f"message_id={row.get('message_id','-')};detail={row.get('detail','-')}"
+                ),
+            )
+
+    def _open_map_view(self):
+        _ensure_geojson_file()
+        if not self._geo_points:
+            try:
+                with open(MAP_GEOJSON_FILE, "r", encoding="utf-8") as f:
+                    payload = json.load(f)
+                self._geo_points = payload.get("features", [])
+            except Exception:
+                messagebox.showerror("Map", "Failed to load GeoJSON.")
+                return
+
+        win = tk.Toplevel(self)
+        win.title("Risk Map")
+        win.geometry("860x560")
+        win.configure(bg=C["bg"])
+        self._map_canvas = tk.Canvas(win, bg="#0b1220", highlightthickness=0)
+        self._map_canvas.pack(fill="both", expand=True, padx=10, pady=10)
+        self._map_canvas.bind("<Configure>", lambda e: self._draw_map())
+        self._draw_map()
+
+    def _draw_map(self):
+        if not self._map_canvas:
+            return
+        cv = self._map_canvas
+        cv.delete("all")
+        w = max(cv.winfo_width(), 400)
+        h = max(cv.winfo_height(), 250)
+        pad = 30
+
+        lons = [feat.get("geometry", {}).get("coordinates", [0, 0])[0] for feat in self._geo_points]
+        lats = [feat.get("geometry", {}).get("coordinates", [0, 0])[1] for feat in self._geo_points]
+        outline_lons = [p[0] for p in TANZANIA_OUTLINE]
+        outline_lats = [p[1] for p in TANZANIA_OUTLINE]
+        lons.extend(outline_lons)
+        lats.extend(outline_lats)
+        if not lons or not lats:
+            return
+        min_lon, max_lon = min(lons), max(lons)
+        min_lat, max_lat = min(lats), max(lats)
+        lon_span = max(max_lon - min_lon, 1e-6)
+        lat_span = max(max_lat - min_lat, 1e-6)
+
+        def project(lon, lat):
+            x = pad + ((lon - min_lon) / lon_span) * (w - 2 * pad)
+            y = h - pad - ((lat - min_lat) / lat_span) * (h - 2 * pad)
+            return x, y
+
+        # Ocean background gradient bands.
+        cv.create_rectangle(0, 0, w, h, fill="#0b1220", outline="")
+        for i, color in enumerate(["#0e1730", "#102040", "#13254c"]):
+            y0 = int(i * h / 3)
+            y1 = int((i + 1) * h / 3)
+            cv.create_rectangle(0, y0, w, y1, fill=color, outline="")
+
+        # Graticule grid for map context.
+        for gx in range(5):
+            x = pad + gx * (w - 2 * pad) / 4
+            cv.create_line(x, pad, x, h - pad, fill="#22314f", width=1)
+        for gy in range(5):
+            y = pad + gy * (h - 2 * pad) / 4
+            cv.create_line(pad, y, w - pad, y, fill="#22314f", width=1)
+
+        # Tanzania silhouette.
+        poly = []
+        for lon, lat in TANZANIA_OUTLINE:
+            x, y = project(lon, lat)
+            poly.extend([x, y])
+        cv.create_polygon(poly, fill="#1e4f44", outline="#5fd1ad", width=2)
+
+        for feat in self._geo_points:
+            props = feat.get("properties", {})
+            city = props.get("name", "Unknown")
+            lon, lat = feat.get("geometry", {}).get("coordinates", [0, 0])
+            x, y = project(lon, lat)
+
+            score = self._risk_scores.get(city, 0)
+            level = _event_level(self._events.get(city))
+            col = C["danger"] if level == "danger" else C["warn"] if level == "possible" else C["ok"]
+            r = 5 + int(score / 12)
+            cv.create_oval(x - r - 2, y - r - 2, x + r + 2, y + r + 2, fill="#081325", outline="")
+            cv.create_oval(x - r, y - r, x + r, y + r, fill=col, outline="")
+            tag = f"city_{city.replace(' ', '_')}"
+            cv.create_text(x + r + 4, y, text=city, fill=C["text"], anchor="w", font=("Courier New", 8), tags=(tag,))
+            cv.tag_bind(tag, "<Button-1>", lambda _e, c=city: self._select(c))
+
+        cv.create_text(
+            14,
+            14,
+            anchor="nw",
+            fill=C["muted"],
+            font=("Courier New", 9),
+            text="Tanzania risk map: silhouette + risk markers (click labels to select)",
+        )
 
     # ── Helpers ────────────────────────────────────────────────────────────────
     def _tick(self):
@@ -1066,6 +1366,8 @@ class Dashboard(tk.Frame):
         avg_risk = int(sum(self._risk_scores.values()) / len(self._risk_scores)) if self._risk_scores else 0
         self._sc_risk.set(f"{avg_risk}/100")
         self._update_smart_panel()
+        if self._map_canvas and self._map_canvas.winfo_exists():
+            self._draw_map()
 
     def _update_chips(self):
         for city, (frame, dot, lbl) in self._chips.items():
@@ -1235,8 +1537,9 @@ class Dashboard(tk.Frame):
                     continue
                 msg = self._alert_sys.create_alert(entry, ev, self._cache[rgn])
                 self._alert_sys.log_to_xml(entry, ev, msg)
+                notify = self._notifier.send_alert(rgn, ev, msg)
                 sent += 1
-                sent_items.append((rgn, ev))
+                sent_items.append((rgn, ev, notify))
             self._alert_sys.save_xml()
             return sent, sent_items
 
@@ -1245,10 +1548,24 @@ class Dashboard(tk.Frame):
             self._log(f"Auto alerts sent: {sent} region(s)", "warn")
             self._sec_log(action="AUTO_SEND_COMPLETE", status="OK",
                           detail=f"sent_regions={sent}")
-            for rgn, ev in sent_items:
+            for rgn, ev, notify_rows in sent_items:
                 self._sec_log(action="ALERT_SENT", status="ALERT",
                               city=rgn, event=ev,
                               detail="source=auto_send")
+                self._create_incident_for_alert(rgn, ev, "auto_send")
+                for row in notify_rows:
+                    st = row.get("status", "").upper()
+                    level = "OK" if st == "SENT" else "ALERT" if st == "FAILED" else "WARN"
+                    self._sec_log(
+                        action="DELIVERY_STATUS",
+                        status=level,
+                        city=rgn,
+                        event=ev,
+                        detail=(
+                            f"provider={row.get('provider','-')};status={row.get('status','-')};"
+                            f"message_id={row.get('message_id','-')};detail={row.get('detail','-')}"
+                        ),
+                    )
             messagebox.showinfo("Done", f"✅  {sent} alert(s) sent.")
 
         def err(exc):
@@ -1321,6 +1638,10 @@ class Dashboard(tk.Frame):
                 self._sec_log(action="ALERT_SENT", status="ALERT",
                               city=city, event=self._events.get(city, "-"),
                               detail="source=send_selected")
+                event = self._events.get(city, "-")
+                if event and event != "-":
+                    self._dispatch_notifications(city, event, result)
+                    self._create_incident_for_alert(city, event, "send_selected")
 
         def err(exc):
             self._log(f"ERROR {city}: {exc}", "err")
@@ -1349,13 +1670,41 @@ class Dashboard(tk.Frame):
             return
 
         def work():
-            self._alert_sys.send_alerts(self._cache)
+            sent_items = []
+            for region_entry in self._alert_sys.regions:
+                city = region_entry["region"]
+                weather = self._cache.get(city)
+                if not weather:
+                    continue
+                event = self._alert_sys.determine_event(weather) or "rain"
+                msg = self._alert_sys.create_alert(region_entry, event, weather)
+                self._alert_sys.log_to_xml(region_entry, event, msg)
+                notify = self._notifier.send_alert(city, event, msg)
+                sent_items.append((city, event, notify))
+            self._alert_sys.save_xml()
+            return sent_items
 
-        def ok(_):
+        def ok(sent_items):
             n = len(self._alert_sys.regions)
             self._log(f"All alerts sent ({n} regions)", "warn")
             self._sec_log(action="SEND_ALL_COMPLETE", status="ALERT",
                           detail=f"regions_processed={n}")
+            for city, event, notify_rows in sent_items:
+                self._create_incident_for_alert(city, event, "send_all")
+                for row in notify_rows:
+                    st = row.get("status", "").upper()
+                    level = "OK" if st == "SENT" else "ALERT" if st == "FAILED" else "WARN"
+                    self._sec_log(
+                        action="DELIVERY_STATUS",
+                        status=level,
+                        city=city,
+                        event=event,
+                        detail=(
+                            f"provider={row.get('provider','-')};status={row.get('status','-')};"
+                            f"message_id={row.get('message_id','-')};detail={row.get('detail','-')}"
+                        ),
+                    )
+            self._load_incidents()
             messagebox.showinfo("Done", "All region alerts processed.")
 
         def err(exc):
@@ -1402,6 +1751,7 @@ class Dashboard(tk.Frame):
 # ══════════════════════════════════════════════════════════════════════════════
 def main():
     _ensure_user_store()
+    _ensure_geojson_file()
     root = tk.Tk()
     root.configure(bg=C["bg"])
     _current = [None]

@@ -20,7 +20,11 @@
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -62,7 +66,11 @@
     
     
     
+    
+    
     <Farmer>Lina</Farmer>
+    
+    
     
     
     
@@ -104,7 +112,11 @@
     
     
     
+    
+    
     <Region>Arusha</Region>
+    
+    
     
     
     
@@ -146,6 +158,8 @@
     
     
     
+    
+    
     <Message>Hello Lina in Arusha!
 ⚠️ Weather Alert: RAIN
 Current Temp: 25.5°C
@@ -161,6 +175,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -182,6 +198,7 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
 
   
   
@@ -192,7 +209,10 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
   <Alert>
+    
+    
     
     
     
@@ -230,7 +250,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Farmer>Lina</Farmer>
+    
+    
     
     
     
@@ -268,7 +292,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Arusha</Region>
+    
+    
     
     
     
@@ -306,6 +334,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Hello Lina in Arusha!
 ⚠️ Weather Alert: RAIN
 Current Temp: 25.9°C
@@ -320,6 +350,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -348,7 +380,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -386,7 +422,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Farmer>Lina</Farmer>
+    
+    
     
     
     
@@ -424,7 +464,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Arusha</Region>
+    
+    
     
     
     
@@ -462,6 +506,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Hello Lina in Arusha!
 ⚠️ Weather Alert: RAIN
 Current Temp: 25.9°C
@@ -476,6 +522,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -495,6 +543,7 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
 
   
   
@@ -504,7 +553,10 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
   <Alert>
+    
+    
     
     
     
@@ -538,7 +590,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Arusha</Region>
+    
+    
     
     
     
@@ -572,6 +628,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Arusha
 ⚠️ Weather Alert: RAIN
 Current Temp: 26.5°C
@@ -585,6 +643,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -610,7 +670,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -644,7 +708,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Mbeya</Region>
+    
+    
     
     
     
@@ -678,6 +746,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Mbeya
 ⚠️ Weather Alert: RAIN
 Current Temp: 20.9°C
@@ -691,6 +761,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -716,7 +788,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -750,7 +826,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Zanzibar</Region>
+    
+    
     
     
     
@@ -784,6 +864,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Zanzibar
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.6°C
@@ -797,6 +879,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -822,7 +906,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -856,7 +944,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Tanga</Region>
+    
+    
     
     
     
@@ -890,6 +982,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Tanga
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.0°C
@@ -903,6 +997,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -928,7 +1024,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -962,7 +1062,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kigoma</Region>
+    
+    
     
     
     
@@ -996,6 +1100,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kigoma
 ⚠️ Weather Alert: RAIN
 Current Temp: 25.9°C
@@ -1009,6 +1115,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -1034,7 +1142,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -1068,7 +1180,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Sumbawanga</Region>
+    
+    
     
     
     
@@ -1102,6 +1218,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Sumbawanga
 ⚠️ Weather Alert: RAIN
 Current Temp: 20.7°C
@@ -1115,6 +1233,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -1140,7 +1260,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -1174,7 +1298,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Songea</Region>
+    
+    
     
     
     
@@ -1208,6 +1336,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Songea
 ⚠️ Weather Alert: RAIN
 Current Temp: 21.2°C
@@ -1221,6 +1351,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -1246,7 +1378,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -1280,7 +1416,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kahama</Region>
+    
+    
     
     
     
@@ -1314,6 +1454,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kahama
 ⚠️ Weather Alert: RAIN
 Current Temp: 27.6°C
@@ -1327,6 +1469,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -1352,7 +1496,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -1386,7 +1534,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Singida</Region>
+    
+    
     
     
     
@@ -1420,6 +1572,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Singida
 ⚠️ Weather Alert: RAIN
 Current Temp: 24.5°C
@@ -1433,6 +1587,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -1458,7 +1614,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -1492,7 +1652,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Rukwa</Region>
+    
+    
     
     
     
@@ -1526,6 +1690,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Rukwa
 ⚠️ Weather Alert: RAIN
 Current Temp: 20.7°C
@@ -1539,6 +1705,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -1564,7 +1732,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -1598,7 +1770,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Ruvuma</Region>
+    
+    
     
     
     
@@ -1632,6 +1808,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Ruvuma
 ⚠️ Weather Alert: RAIN
 Current Temp: 21.2°C
@@ -1645,6 +1823,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -1670,7 +1850,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -1704,7 +1888,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Katavi</Region>
+    
+    
     
     
     
@@ -1738,6 +1926,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Katavi
 ⚠️ Weather Alert: RAIN
 Current Temp: 25.7°C
@@ -1751,6 +1941,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -1776,7 +1968,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -1810,7 +2006,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Songwe</Region>
+    
+    
     
     
     
@@ -1844,6 +2044,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Songwe
 ⚠️ Weather Alert: RAIN
 Current Temp: 22.9°C
@@ -1857,6 +2059,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -1882,7 +2086,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -1916,7 +2124,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Njombe</Region>
+    
+    
     
     
     
@@ -1950,6 +2162,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Njombe
 ⚠️ Weather Alert: RAIN
 Current Temp: 27.7°C
@@ -1963,6 +2177,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -1988,7 +2204,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -2022,7 +2242,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kaskazini Unguja</Region>
+    
+    
     
     
     
@@ -2056,6 +2280,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kaskazini Unguja
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.0°C
@@ -2069,6 +2295,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -2094,7 +2322,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -2128,7 +2360,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kusini Pemba</Region>
+    
+    
     
     
     
@@ -2162,6 +2398,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kusini Pemba
 ⚠️ Weather Alert: RAIN
 Current Temp: 29.1°C
@@ -2175,6 +2413,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -2200,7 +2440,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -2234,7 +2478,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kaskazini Pemba</Region>
+    
+    
     
     
     
@@ -2268,6 +2516,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kaskazini Pemba
 ⚠️ Weather Alert: RAIN
 Current Temp: 29.1°C
@@ -2281,6 +2531,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -2306,7 +2558,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -2340,7 +2596,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Mjini Magharibi</Region>
+    
+    
     
     
     
@@ -2374,6 +2634,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Mjini Magharibi
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.6°C
@@ -2387,6 +2649,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -2404,6 +2668,7 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
 
   
   
@@ -2412,7 +2677,10 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
   <Alert>
+    
+    
     
     
     
@@ -2442,7 +2710,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Arusha</Region>
+    
+    
     
     
     
@@ -2472,6 +2744,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Arusha
 ⚠️ Weather Alert: RAIN
 Current Temp: 26.5°C
@@ -2484,6 +2758,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -2506,7 +2782,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -2536,7 +2816,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Mbeya</Region>
+    
+    
     
     
     
@@ -2566,6 +2850,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Mbeya
 ⚠️ Weather Alert: RAIN
 Current Temp: 20.9°C
@@ -2578,6 +2864,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -2600,7 +2888,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -2630,7 +2922,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Zanzibar</Region>
+    
+    
     
     
     
@@ -2660,6 +2956,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Zanzibar
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.6°C
@@ -2672,6 +2970,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -2694,7 +2994,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -2724,7 +3028,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Tanga</Region>
+    
+    
     
     
     
@@ -2754,6 +3062,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Tanga
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.0°C
@@ -2766,6 +3076,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -2788,7 +3100,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -2818,7 +3134,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kigoma</Region>
+    
+    
     
     
     
@@ -2848,6 +3168,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kigoma
 ⚠️ Weather Alert: RAIN
 Current Temp: 25.9°C
@@ -2860,6 +3182,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -2882,7 +3206,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -2912,7 +3240,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Sumbawanga</Region>
+    
+    
     
     
     
@@ -2942,6 +3274,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Sumbawanga
 ⚠️ Weather Alert: RAIN
 Current Temp: 20.7°C
@@ -2954,6 +3288,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -2976,7 +3312,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3006,7 +3346,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Songea</Region>
+    
+    
     
     
     
@@ -3036,6 +3380,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Songea
 ⚠️ Weather Alert: RAIN
 Current Temp: 21.2°C
@@ -3048,6 +3394,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -3070,7 +3418,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3100,7 +3452,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kahama</Region>
+    
+    
     
     
     
@@ -3130,6 +3486,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kahama
 ⚠️ Weather Alert: RAIN
 Current Temp: 27.6°C
@@ -3142,6 +3500,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -3164,7 +3524,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3194,7 +3558,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Singida</Region>
+    
+    
     
     
     
@@ -3224,6 +3592,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Singida
 ⚠️ Weather Alert: RAIN
 Current Temp: 24.5°C
@@ -3236,6 +3606,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -3258,7 +3630,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3288,7 +3664,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Rukwa</Region>
+    
+    
     
     
     
@@ -3318,6 +3698,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Rukwa
 ⚠️ Weather Alert: RAIN
 Current Temp: 20.7°C
@@ -3330,6 +3712,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -3352,7 +3736,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3382,7 +3770,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Ruvuma</Region>
+    
+    
     
     
     
@@ -3412,6 +3804,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Ruvuma
 ⚠️ Weather Alert: RAIN
 Current Temp: 21.3°C
@@ -3424,6 +3818,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -3446,7 +3842,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3476,7 +3876,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Katavi</Region>
+    
+    
     
     
     
@@ -3506,6 +3910,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Katavi
 ⚠️ Weather Alert: RAIN
 Current Temp: 25.7°C
@@ -3518,6 +3924,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -3540,7 +3948,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3570,7 +3982,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Songwe</Region>
+    
+    
     
     
     
@@ -3600,6 +4016,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Songwe
 ⚠️ Weather Alert: RAIN
 Current Temp: 22.9°C
@@ -3612,6 +4030,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -3634,7 +4054,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3664,7 +4088,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Njombe</Region>
+    
+    
     
     
     
@@ -3694,6 +4122,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Njombe
 ⚠️ Weather Alert: RAIN
 Current Temp: 27.7°C
@@ -3706,6 +4136,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -3728,7 +4160,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3758,7 +4194,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kaskazini Unguja</Region>
+    
+    
     
     
     
@@ -3788,6 +4228,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kaskazini Unguja
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.0°C
@@ -3800,6 +4242,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -3822,7 +4266,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3852,7 +4300,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kusini Pemba</Region>
+    
+    
     
     
     
@@ -3882,6 +4334,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kusini Pemba
 ⚠️ Weather Alert: RAIN
 Current Temp: 29.1°C
@@ -3894,6 +4348,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -3916,7 +4372,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -3946,7 +4406,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kaskazini Pemba</Region>
+    
+    
     
     
     
@@ -3976,6 +4440,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kaskazini Pemba
 ⚠️ Weather Alert: RAIN
 Current Temp: 29.1°C
@@ -3988,6 +4454,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4010,7 +4478,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4040,7 +4512,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Mjini Magharibi</Region>
+    
+    
     
     
     
@@ -4070,6 +4546,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Mjini Magharibi
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.6°C
@@ -4082,6 +4560,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4097,6 +4577,7 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
 
   
   
@@ -4104,7 +4585,10 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
   <Alert>
+    
+    
     
     
     
@@ -4130,7 +4614,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Arusha</Region>
+    
+    
     
     
     
@@ -4156,6 +4644,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Arusha
 ⚠️ Weather Alert: RAIN
 Current Temp: 26.5°C
@@ -4167,6 +4657,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4186,7 +4678,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4212,7 +4708,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Mbeya</Region>
+    
+    
     
     
     
@@ -4238,6 +4738,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Mbeya
 ⚠️ Weather Alert: RAIN
 Current Temp: 20.9°C
@@ -4249,6 +4751,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4268,7 +4772,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4294,7 +4802,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Zanzibar</Region>
+    
+    
     
     
     
@@ -4320,6 +4832,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Zanzibar
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.5°C
@@ -4331,6 +4845,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4350,7 +4866,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4376,7 +4896,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Tanga</Region>
+    
+    
     
     
     
@@ -4402,6 +4926,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Tanga
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.1°C
@@ -4413,6 +4939,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4432,7 +4960,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4458,7 +4990,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kigoma</Region>
+    
+    
     
     
     
@@ -4484,6 +5020,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kigoma
 ⚠️ Weather Alert: RAIN
 Current Temp: 25.9°C
@@ -4495,6 +5033,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4514,7 +5054,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4540,7 +5084,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Sumbawanga</Region>
+    
+    
     
     
     
@@ -4566,6 +5114,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Sumbawanga
 ⚠️ Weather Alert: RAIN
 Current Temp: 20.7°C
@@ -4577,6 +5127,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4596,7 +5148,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4622,7 +5178,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Songea</Region>
+    
+    
     
     
     
@@ -4648,6 +5208,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Songea
 ⚠️ Weather Alert: RAIN
 Current Temp: 21.2°C
@@ -4659,6 +5221,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4678,7 +5242,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4704,7 +5272,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kahama</Region>
+    
+    
     
     
     
@@ -4730,6 +5302,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kahama
 ⚠️ Weather Alert: RAIN
 Current Temp: 27.4°C
@@ -4741,6 +5315,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4760,7 +5336,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4786,7 +5366,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Singida</Region>
+    
+    
     
     
     
@@ -4812,6 +5396,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Singida
 ⚠️ Weather Alert: RAIN
 Current Temp: 24.5°C
@@ -4823,6 +5409,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4842,7 +5430,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4868,7 +5460,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Rukwa</Region>
+    
+    
     
     
     
@@ -4894,6 +5490,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Rukwa
 ⚠️ Weather Alert: RAIN
 Current Temp: 20.7°C
@@ -4905,6 +5503,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -4924,7 +5524,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -4950,7 +5554,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Ruvuma</Region>
+    
+    
     
     
     
@@ -4976,6 +5584,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Ruvuma
 ⚠️ Weather Alert: RAIN
 Current Temp: 21.2°C
@@ -4987,6 +5597,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -5006,7 +5618,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -5032,7 +5648,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Katavi</Region>
+    
+    
     
     
     
@@ -5058,6 +5678,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Katavi
 ⚠️ Weather Alert: RAIN
 Current Temp: 25.2°C
@@ -5069,6 +5691,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -5088,7 +5712,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -5114,7 +5742,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Songwe</Region>
+    
+    
     
     
     
@@ -5140,6 +5772,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Songwe
 ⚠️ Weather Alert: RAIN
 Current Temp: 22.4°C
@@ -5151,6 +5785,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -5170,7 +5806,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -5196,7 +5836,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Njombe</Region>
+    
+    
     
     
     
@@ -5222,6 +5866,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Njombe
 ⚠️ Weather Alert: RAIN
 Current Temp: 27.7°C
@@ -5233,6 +5879,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -5252,7 +5900,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -5278,7 +5930,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kaskazini Unguja</Region>
+    
+    
     
     
     
@@ -5304,6 +5960,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kaskazini Unguja
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.0°C
@@ -5315,6 +5973,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -5334,7 +5994,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -5360,7 +6024,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kusini Pemba</Region>
+    
+    
     
     
     
@@ -5386,6 +6054,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kusini Pemba
 ⚠️ Weather Alert: RAIN
 Current Temp: 29.1°C
@@ -5397,6 +6067,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -5416,7 +6088,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -5442,7 +6118,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kaskazini Pemba</Region>
+    
+    
     
     
     
@@ -5468,6 +6148,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kaskazini Pemba
 ⚠️ Weather Alert: RAIN
 Current Temp: 29.1°C
@@ -5479,6 +6161,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -5498,7 +6182,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -5524,6 +6212,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Mjini Magharibi</Region>
     
     
@@ -5537,7 +6227,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -5561,6 +6255,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -5574,7 +6270,9 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
 
+  
   
   
   
@@ -5591,7 +6289,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
     
     
     
@@ -5613,7 +6315,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -5634,12 +6340,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -5661,7 +6371,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
     
     
     
@@ -5683,7 +6397,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -5704,12 +6422,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -5731,7 +6453,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
     
     
     
@@ -5753,7 +6479,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -5774,12 +6504,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -5801,7 +6535,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
     
     
     
@@ -5823,7 +6561,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -5844,12 +6586,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -5871,7 +6617,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
     
     
     
@@ -5893,7 +6643,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -5914,12 +6668,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -5941,7 +6699,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.124559</Timestamp>
+    
+    
     
     
     
@@ -5963,7 +6725,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -5984,6 +6750,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -6000,7 +6768,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -6022,7 +6794,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Songea</Region>
+    
+    
     
     
     
@@ -6044,6 +6820,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Songea
 ⚠️ Weather Alert: RAIN
 Current Temp: 21.2°C
@@ -6054,12 +6832,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6081,7 +6863,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
     
     
     
@@ -6103,7 +6889,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6124,12 +6914,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6151,7 +6945,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
     
     
     
@@ -6173,7 +6971,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6194,12 +6996,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6221,7 +7027,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
     
     
     
@@ -6243,7 +7053,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6264,12 +7078,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6291,7 +7109,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
     
     
     
@@ -6313,7 +7135,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6334,12 +7160,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6361,7 +7191,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
     
     
     
@@ -6383,7 +7217,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6404,12 +7242,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6431,7 +7273,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
     
     
     
@@ -6453,7 +7299,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6474,12 +7324,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6501,7 +7355,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
     
     
     
@@ -6523,7 +7381,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6544,12 +7406,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6571,7 +7437,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
     
     
     
@@ -6593,7 +7463,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6614,12 +7488,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6641,7 +7519,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:06.125916</Timestamp>
+    
+    
     
     
     
@@ -6663,7 +7545,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6684,6 +7570,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -6700,7 +7588,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -6722,7 +7614,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kaskazini Pemba</Region>
+    
+    
     
     
     
@@ -6744,6 +7640,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Kaskazini Pemba
 ⚠️ Weather Alert: RAIN
 Current Temp: 29.4°C
@@ -6754,6 +7652,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -6770,7 +7670,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -6792,7 +7696,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Mjini Magharibi</Region>
+    
+    
     
     
     
@@ -6814,6 +7722,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Message>Region: Mjini Magharibi
 ⚠️ Weather Alert: RAIN
 Current Temp: 30.5°C
@@ -6824,12 +7734,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6851,7 +7765,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -6873,7 +7791,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6894,12 +7816,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6921,7 +7847,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -6943,7 +7873,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -6964,12 +7898,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -6991,7 +7929,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -7013,7 +7955,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7034,12 +7980,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7061,7 +8011,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -7083,7 +8037,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7104,12 +8062,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7131,7 +8093,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -7153,7 +8119,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7174,12 +8144,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7201,7 +8175,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -7223,7 +8201,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7244,12 +8226,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7271,7 +8257,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -7293,7 +8283,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7314,12 +8308,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7341,7 +8339,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -7363,7 +8365,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7384,12 +8390,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7411,7 +8421,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -7433,7 +8447,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7454,12 +8472,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7481,7 +8503,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -7503,7 +8529,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7524,12 +8554,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7551,7 +8585,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.195060</Timestamp>
+    
+    
     
     
     
@@ -7573,7 +8611,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7594,12 +8636,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7621,7 +8667,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
     
     
     
@@ -7643,7 +8693,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7664,12 +8718,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7691,7 +8749,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
     
     
     
@@ -7713,7 +8775,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7734,12 +8800,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7761,7 +8831,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
     
     
     
@@ -7783,7 +8857,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7804,12 +8882,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7831,7 +8913,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
     
     
     
@@ -7853,7 +8939,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7874,12 +8964,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7901,7 +8995,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
     
     
     
@@ -7923,7 +9021,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -7944,12 +9046,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -7971,7 +9077,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
     
     
     
@@ -7993,7 +9103,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -8014,12 +9128,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -8041,7 +9159,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:25:42.196059</Timestamp>
+    
+    
     
     
     
@@ -8063,7 +9185,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -8084,6 +9210,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -8095,12 +9223,16 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
 
   
   
   
   
+  
   <Alert>
+    
+    
     
     
     
@@ -8118,6 +9250,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Arusha</Region>
     
     
@@ -8127,7 +9261,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -8145,6 +9283,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -8158,7 +9298,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -8176,6 +9320,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Mbeya</Region>
     
     
@@ -8185,7 +9331,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -8203,11 +9353,15 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
   
   </Alert>
+  
+  
   
   
   
@@ -8225,7 +9379,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Timestamp>2026-03-17T13:28:58.540351</Timestamp>
+    
+    
     
     
     
@@ -8243,7 +9401,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -8261,6 +9423,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -8274,7 +9438,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
+  
   <Alert>
+    
+    
     
     
     
@@ -8292,6 +9460,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Tanga</Region>
     
     
@@ -8301,7 +9471,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -8319,6 +9493,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -8328,11 +9504,15 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
 
   
   
   
+  
   <Alert>
+    
+    
     
     
     
@@ -8346,6 +9526,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Mpanda</Region>
     
     
@@ -8353,7 +9535,11 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -8368,6 +9554,8 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+  
   
   
   
@@ -8375,10 +9563,14 @@ Action: Ensure drainage is clear and crops are protected.</Message>
   
   
   
+  
 
   
   
+  
   <Alert>
+    
+    
     
     
     
@@ -8388,12 +9580,18 @@ Action: Ensure drainage is clear and crops are protected.</Message>
     
     
     
+    
+    
     <Region>Kigoma</Region>
     
     
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     
@@ -8405,23 +9603,35 @@ Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
     
+    
+  
   
   
   </Alert>
   
   
+  
 
   
+  
   <Alert>
+    
+    
     
     
     <Timestamp>2026-03-17T15:13:39.114617</Timestamp>
     
     
+    
+    
     <Region>Kilimanjaro</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Kilimanjaro
@@ -8430,20 +9640,32 @@ Current Temp: 30.2°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Arusha</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Arusha
@@ -8452,20 +9674,32 @@ Current Temp: 24.8°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Mbeya</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Mbeya
@@ -8474,20 +9708,32 @@ Current Temp: 20.4°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Kigoma</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Kigoma
@@ -8496,20 +9742,32 @@ Current Temp: 25.7°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Moshi</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Moshi
@@ -8518,20 +9776,32 @@ Current Temp: 30.1°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Sumbawanga</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Sumbawanga
@@ -8540,20 +9810,32 @@ Current Temp: 20.1°C
 Condition: Patchy light rain in area with thunder
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Mpanda</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Mpanda
@@ -8562,20 +9844,32 @@ Current Temp: 26.4°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Tabora</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Tabora
@@ -8584,20 +9878,32 @@ Current Temp: 28.2°C
 Condition: Patchy light rain in area with thunder
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Singida</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Singida
@@ -8606,20 +9912,32 @@ Current Temp: 22.3°C
 Condition: Patchy light rain in area with thunder
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Rukwa</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Rukwa
@@ -8628,20 +9946,32 @@ Current Temp: 19.5°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Manyara</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Manyara
@@ -8650,20 +9980,32 @@ Current Temp: 27.9°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Songwe</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Songwe
@@ -8672,20 +10014,32 @@ Current Temp: 21.4°C
 Condition: Patchy light rain in area with thunder
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Kilimanjaro</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Kilimanjaro
@@ -8694,20 +10048,32 @@ Current Temp: 30.2°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
   
   </Alert>
+  
+  
   
   
   <Alert>
     
     
+    
+    
     <Timestamp>2026-03-17T15:13:51.418442</Timestamp>
+    
+    
     
     
     <Region>Kaskazini Pemba</Region>
     
     
+    
+    
     <Event>rain</Event>
+    
+    
     
     
     <Message>Region: Kaskazini Pemba
@@ -8716,17 +10082,133 @@ Current Temp: 29.0°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
     
+    
+  
+  
+  </Alert>
+  
+  
+
+  
+  <Alert>
+    
+    
+    <Timestamp>2026-03-17T15:46:56.962748</Timestamp>
+    
+    
+    <Region>Arusha</Region>
+    
+    
+    <Event>rain</Event>
+    
+    
+    <Message>Region: Arusha
+⚠️ Weather Alert: RAIN
+Current Temp: 24.8°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+    
   
   </Alert>
   
 
   <Alert>
-    <Timestamp>2026-03-17T15:46:56.962748</Timestamp>
-    <Region>Arusha</Region>
+    <Timestamp>2026-03-17T22:27:53.477960</Timestamp>
+    <Region>Morogoro</Region>
     <Event>rain</Event>
-    <Message>Region: Arusha
+    <Message>Region: Morogoro
 ⚠️ Weather Alert: RAIN
-Current Temp: 24.8°C
+Current Temp: 20.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+  </Alert>
+  <Alert>
+    <Timestamp>2026-03-17T22:27:53.485478</Timestamp>
+    <Region>Tanga</Region>
+    <Event>rain</Event>
+    <Message>Region: Tanga
+⚠️ Weather Alert: RAIN
+Current Temp: 27.1°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+  </Alert>
+  <Alert>
+    <Timestamp>2026-03-17T22:27:53.495504</Timestamp>
+    <Region>Sumbawanga</Region>
+    <Event>rain</Event>
+    <Message>Region: Sumbawanga
+⚠️ Weather Alert: RAIN
+Current Temp: 14.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+  </Alert>
+  <Alert>
+    <Timestamp>2026-03-17T22:27:53.504974</Timestamp>
+    <Region>Musoma</Region>
+    <Event>rain</Event>
+    <Message>Region: Musoma
+⚠️ Weather Alert: RAIN
+Current Temp: 21.3°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+  </Alert>
+  <Alert>
+    <Timestamp>2026-03-17T22:27:53.514489</Timestamp>
+    <Region>Tabora</Region>
+    <Event>rain</Event>
+    <Message>Region: Tabora
+⚠️ Weather Alert: RAIN
+Current Temp: 19.0°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+  </Alert>
+  <Alert>
+    <Timestamp>2026-03-17T22:27:53.523998</Timestamp>
+    <Region>Singida</Region>
+    <Event>rain</Event>
+    <Message>Region: Singida
+⚠️ Weather Alert: RAIN
+Current Temp: 17.2°C
+Condition: Light rain shower
+Action: Ensure drainage is clear and crops are protected.</Message>
+  </Alert>
+  <Alert>
+    <Timestamp>2026-03-17T22:27:53.535505</Timestamp>
+    <Region>Rukwa</Region>
+    <Event>rain</Event>
+    <Message>Region: Rukwa
+⚠️ Weather Alert: RAIN
+Current Temp: 14.4°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+  </Alert>
+  <Alert>
+    <Timestamp>2026-03-17T22:27:53.545018</Timestamp>
+    <Region>Manyara</Region>
+    <Event>rain</Event>
+    <Message>Region: Manyara
+⚠️ Weather Alert: RAIN
+Current Temp: 20.2°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+  </Alert>
+  <Alert>
+    <Timestamp>2026-03-17T22:27:53.556045</Timestamp>
+    <Region>Kagera</Region>
+    <Event>rain</Event>
+    <Message>Region: Kagera
+⚠️ Weather Alert: RAIN
+Current Temp: 19.5°C
+Condition: Patchy rain nearby
+Action: Ensure drainage is clear and crops are protected.</Message>
+  </Alert>
+  <Alert>
+    <Timestamp>2026-03-17T22:27:53.567558</Timestamp>
+    <Region>Kaskazini Unguja</Region>
+    <Event>rain</Event>
+    <Message>Region: Kaskazini Unguja
+⚠️ Weather Alert: RAIN
+Current Temp: 27.1°C
 Condition: Patchy rain nearby
 Action: Ensure drainage is clear and crops are protected.</Message>
   </Alert>

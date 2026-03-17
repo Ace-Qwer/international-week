@@ -1,6 +1,6 @@
 {
   "Dar es Salaam": {
-    "cached_at": "2026-03-17T21:20:03.401606+00:00",
+    "cached_at": "2026-03-17T21:32:22.135784+00:00",
     "data": {
       "location": {
         "name": "Mabibe",
@@ -9,14 +9,14 @@
         "lat": -6.8,
         "lon": 39.217,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773781243,
-        "localtime": "2026-03-18 00:00"
+        "localtime_epoch": 1773782373,
+        "localtime": "2026-03-18 00:19"
       },
       "current": {
-        "last_updated_epoch": 1773781200,
-        "last_updated": "2026-03-18 00:00",
-        "temp_c": 25.5,
-        "temp_f": 77.8,
+        "last_updated_epoch": 1773782100,
+        "last_updated": "2026-03-18 00:15",
+        "temp_c": 26.4,
+        "temp_f": 79.5,
         "is_day": 0,
         "condition": {
           "text": "Partly Cloudy",
@@ -27,14 +27,14 @@
         "wind_kph": 4.7,
         "wind_degree": 141,
         "wind_dir": "SE",
-        "pressure_mb": 1009.0,
-        "pressure_in": 29.8,
+        "pressure_mb": 1012.0,
+        "pressure_in": 29.88,
         "precip_mm": 0.0,
         "precip_in": 0.0,
-        "humidity": 88,
-        "cloud": 38,
-        "feelslike_c": 28.3,
-        "feelslike_f": 83.0,
+        "humidity": 89,
+        "cloud": 25,
+        "feelslike_c": 30.1,
+        "feelslike_f": 86.1,
         "windchill_c": 25.5,
         "windchill_f": 77.8,
         "heatindex_c": 28.3,
@@ -140,8 +140,8 @@
               {
                 "time_epoch": 1773784800,
                 "time": "2026-03-18 01:00",
-                "temp_c": 25.5,
-                "temp_f": 77.8,
+                "temp_c": 26.4,
+                "temp_f": 79.5,
                 "is_day": 0,
                 "condition": {
                   "text": "Partly Cloudy ",
@@ -152,13 +152,13 @@
                 "wind_kph": 4.7,
                 "wind_degree": 141,
                 "wind_dir": "SE",
-                "pressure_mb": 1009.0,
-                "pressure_in": 29.8,
+                "pressure_mb": 1012.0,
+                "pressure_in": 29.88,
                 "precip_mm": 0.0,
                 "precip_in": 0.0,
                 "snow_cm": 0.0,
-                "humidity": 88,
-                "cloud": 38,
+                "humidity": 89,
+                "cloud": 25,
                 "feelslike_c": 28.3,
                 "feelslike_f": 83.0,
                 "windchill_c": 25.5,
@@ -3352,7 +3352,7 @@
     }
   },
   "Dodoma": {
-    "cached_at": "2026-03-17T21:20:03.924446+00:00",
+    "cached_at": "2026-03-17T21:32:22.685486+00:00",
     "data": {
       "location": {
         "name": "Dodoma",
@@ -6704,7 +6704,7 @@
     }
   },
   "Arusha": {
-    "cached_at": "2026-03-17T21:20:04.455390+00:00",
+    "cached_at": "2026-03-17T21:32:23.210435+00:00",
     "data": {
       "location": {
         "name": "Arusha",
@@ -6713,12 +6713,12 @@
         "lat": -3.367,
         "lon": 36.683,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773781244,
-        "localtime": "2026-03-18 00:00"
+        "localtime_epoch": 1773783107,
+        "localtime": "2026-03-18 00:31"
       },
       "current": {
-        "last_updated_epoch": 1773781200,
-        "last_updated": "2026-03-18 00:00",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 17.4,
         "temp_f": 63.4,
         "is_day": 0,
@@ -10056,7 +10056,7 @@
     }
   },
   "Mwanza": {
-    "cached_at": "2026-03-17T21:20:05.027481+00:00",
+    "cached_at": "2026-03-17T21:32:23.759455+00:00",
     "data": {
       "location": {
         "name": "Mwanza",
@@ -10065,12 +10065,12 @@
         "lat": -2.517,
         "lon": 32.9,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782128,
-        "localtime": "2026-03-18 00:15"
+        "localtime_epoch": 1773783108,
+        "localtime": "2026-03-18 00:31"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 21.9,
         "temp_f": 71.4,
         "is_day": 0,
@@ -13408,7 +13408,7 @@
     }
   },
   "Mbeya": {
-    "cached_at": "2026-03-17T21:20:05.556273+00:00",
+    "cached_at": "2026-03-17T21:32:24.271765+00:00",
     "data": {
       "location": {
         "name": "Mbeya",
@@ -13417,12 +13417,12 @@
         "lat": -8.9,
         "lon": 33.45,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773781244,
-        "localtime": "2026-03-18 00:00"
+        "localtime_epoch": 1773782406,
+        "localtime": "2026-03-18 00:20"
       },
       "current": {
-        "last_updated_epoch": 1773781200,
-        "last_updated": "2026-03-18 00:00",
+        "last_updated_epoch": 1773782100,
+        "last_updated": "2026-03-18 00:15",
         "temp_c": 14.3,
         "temp_f": 57.7,
         "is_day": 0,
@@ -16760,7 +16760,7 @@
     }
   },
   "Zanzibar": {
-    "cached_at": "2026-03-17T21:20:06.110505+00:00",
+    "cached_at": "2026-03-17T21:32:24.803776+00:00",
     "data": {
       "location": {
         "name": "Ngambo",
@@ -20112,7 +20112,7 @@
     }
   },
   "Morogoro": {
-    "cached_at": "2026-03-17T21:20:06.644455+00:00",
+    "cached_at": "2026-03-17T21:32:25.330488+00:00",
     "data": {
       "location": {
         "name": "Morogoro",
@@ -20121,12 +20121,12 @@
         "lat": -6.817,
         "lon": 37.667,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782202,
-        "localtime": "2026-03-18 00:16"
+        "localtime_epoch": 1773783109,
+        "localtime": "2026-03-18 00:31"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 20.1,
         "temp_f": 68.2,
         "is_day": 0,
@@ -23464,7 +23464,7 @@
     }
   },
   "Tanga": {
-    "cached_at": "2026-03-17T21:20:07.172576+00:00",
+    "cached_at": "2026-03-17T21:32:25.854344+00:00",
     "data": {
       "location": {
         "name": "Tanga",
@@ -23473,12 +23473,12 @@
         "lat": -5.067,
         "lon": 39.1,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782335,
-        "localtime": "2026-03-18 00:18"
+        "localtime_epoch": 1773783184,
+        "localtime": "2026-03-18 00:33"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 27.1,
         "temp_f": 80.7,
         "is_day": 0,
@@ -26816,7 +26816,7 @@
     }
   },
   "Kigoma": {
-    "cached_at": "2026-03-17T21:20:07.696538+00:00",
+    "cached_at": "2026-03-17T21:32:26.380335+00:00",
     "data": {
       "location": {
         "name": "Kigoma",
@@ -30168,7 +30168,7 @@
     }
   },
   "Moshi": {
-    "cached_at": "2026-03-17T21:20:08.230716+00:00",
+    "cached_at": "2026-03-17T21:32:26.963486+00:00",
     "data": {
       "location": {
         "name": "Moshi",
@@ -30177,8 +30177,8 @@
         "lat": -3.35,
         "lon": 37.333,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782336,
-        "localtime": "2026-03-18 00:18"
+        "localtime_epoch": 1773782204,
+        "localtime": "2026-03-18 00:16"
       },
       "current": {
         "last_updated_epoch": 1773782100,
@@ -33520,7 +33520,7 @@
     }
   },
   "Sumbawanga": {
-    "cached_at": "2026-03-17T21:20:08.744694+00:00",
+    "cached_at": "2026-03-17T21:32:27.493819+00:00",
     "data": {
       "location": {
         "name": "Sumbawanga",
@@ -33529,12 +33529,12 @@
         "lat": -7.967,
         "lon": 31.617,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782171,
-        "localtime": "2026-03-18 00:16"
+        "localtime_epoch": 1773783111,
+        "localtime": "2026-03-18 00:31"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 14.4,
         "temp_f": 57.9,
         "is_day": 0,
@@ -36872,7 +36872,7 @@
     }
   },
   "Songea": {
-    "cached_at": "2026-03-17T21:20:09.282417+00:00",
+    "cached_at": "2026-03-17T21:32:28.017233+00:00",
     "data": {
       "location": {
         "name": "Songea",
@@ -36881,8 +36881,8 @@
         "lat": -10.683,
         "lon": 35.65,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782377,
-        "localtime": "2026-03-18 00:19"
+        "localtime_epoch": 1773782132,
+        "localtime": "2026-03-18 00:15"
       },
       "current": {
         "last_updated_epoch": 1773782100,
@@ -40224,7 +40224,7 @@
     }
   },
   "Kahama": {
-    "cached_at": "2026-03-17T21:20:09.822356+00:00",
+    "cached_at": "2026-03-17T21:32:28.581393+00:00",
     "data": {
       "location": {
         "name": "Kahama",
@@ -40233,12 +40233,12 @@
         "lat": -3.833,
         "lon": 32.6,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782338,
-        "localtime": "2026-03-18 00:18"
+        "localtime_epoch": 1773783113,
+        "localtime": "2026-03-18 00:31"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 18.7,
         "temp_f": 65.6,
         "is_day": 0,
@@ -43576,7 +43576,7 @@
     }
   },
   "Mpanda": {
-    "cached_at": "2026-03-17T21:20:11.080927+00:00",
+    "cached_at": "2026-03-17T21:32:29.133990+00:00",
     "data": {
       "location": {
         "name": "Mpanda",
@@ -46928,7 +46928,7 @@
     }
   },
   "Musoma": {
-    "cached_at": "2026-03-17T21:20:11.637679+00:00",
+    "cached_at": "2026-03-17T21:32:29.683686+00:00",
     "data": {
       "location": {
         "name": "Musoma",
@@ -46937,12 +46937,12 @@
         "lat": -1.5,
         "lon": 33.8,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782206,
-        "localtime": "2026-03-18 00:16"
+        "localtime_epoch": 1773783188,
+        "localtime": "2026-03-18 00:33"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 21.3,
         "temp_f": 70.4,
         "is_day": 0,
@@ -50280,7 +50280,7 @@
     }
   },
   "Shinyanga": {
-    "cached_at": "2026-03-17T21:20:12.187691+00:00",
+    "cached_at": "2026-03-17T21:32:30.233388+00:00",
     "data": {
       "location": {
         "name": "Shinyanga",
@@ -50289,12 +50289,12 @@
         "lat": -3.667,
         "lon": 33.433,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782412,
-        "localtime": "2026-03-18 00:20"
+        "localtime_epoch": 1773783188,
+        "localtime": "2026-03-18 00:33"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 20.4,
         "temp_f": 68.8,
         "is_day": 0,
@@ -53632,7 +53632,7 @@
     }
   },
   "Tabora": {
-    "cached_at": "2026-03-17T21:20:12.729614+00:00",
+    "cached_at": "2026-03-17T21:32:30.791581+00:00",
     "data": {
       "location": {
         "name": "Tabora",
@@ -53641,12 +53641,12 @@
         "lat": -5.017,
         "lon": 32.8,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773781249,
-        "localtime": "2026-03-18 00:00"
+        "localtime_epoch": 1773783189,
+        "localtime": "2026-03-18 00:33"
       },
       "current": {
-        "last_updated_epoch": 1773781200,
-        "last_updated": "2026-03-18 00:00",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 19.0,
         "temp_f": 66.3,
         "is_day": 0,
@@ -56984,7 +56984,7 @@
     }
   },
   "Singida": {
-    "cached_at": "2026-03-17T21:20:13.282487+00:00",
+    "cached_at": "2026-03-17T21:32:31.378974+00:00",
     "data": {
       "location": {
         "name": "Singida",
@@ -56993,12 +56993,12 @@
         "lat": -4.817,
         "lon": 34.75,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782340,
-        "localtime": "2026-03-18 00:19"
+        "localtime_epoch": 1773783115,
+        "localtime": "2026-03-18 00:31"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 17.2,
         "temp_f": 63.0,
         "is_day": 0,
@@ -60336,7 +60336,7 @@
     }
   },
   "Rukwa": {
-    "cached_at": "2026-03-17T21:20:13.822547+00:00",
+    "cached_at": "2026-03-17T21:32:31.945387+00:00",
     "data": {
       "location": {
         "name": "Fiengalezia",
@@ -63688,7 +63688,7 @@
     }
   },
   "Ruvuma": {
-    "cached_at": "2026-03-17T21:20:14.369254+00:00",
+    "cached_at": "2026-03-17T21:32:32.496583+00:00",
     "data": {
       "location": {
         "name": "Dodoma",
@@ -67040,7 +67040,7 @@
     }
   },
   "Manyara": {
-    "cached_at": "2026-03-17T21:20:14.892562+00:00",
+    "cached_at": "2026-03-17T21:32:33.051273+00:00",
     "data": {
       "location": {
         "name": "Njoro",
@@ -67049,12 +67049,12 @@
         "lat": -3.867,
         "lon": 35.7,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782176,
-        "localtime": "2026-03-18 00:16"
+        "localtime_epoch": 1773783191,
+        "localtime": "2026-03-18 00:33"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 20.2,
         "temp_f": 68.4,
         "is_day": 0,
@@ -70392,7 +70392,7 @@
     }
   },
   "Katavi": {
-    "cached_at": "2026-03-17T21:20:15.439695+00:00",
+    "cached_at": "2026-03-17T21:32:33.606335+00:00",
     "data": {
       "location": {
         "name": "Kapapa",
@@ -73744,7 +73744,7 @@
     }
   },
   "Geita": {
-    "cached_at": "2026-03-17T21:20:15.989431+00:00",
+    "cached_at": "2026-03-17T21:32:34.132526+00:00",
     "data": {
       "location": {
         "name": "Nyankambu",
@@ -73753,8 +73753,8 @@
         "lat": -2.883,
         "lon": 32.2,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782343,
-        "localtime": "2026-03-18 00:19"
+        "localtime_epoch": 1773782137,
+        "localtime": "2026-03-18 00:15"
       },
       "current": {
         "last_updated_epoch": 1773782100,
@@ -77096,7 +77096,7 @@
     }
   },
   "Songwe": {
-    "cached_at": "2026-03-17T21:20:16.531901+00:00",
+    "cached_at": "2026-03-17T21:32:34.673795+00:00",
     "data": {
       "location": {
         "name": "Ikuti",
@@ -80448,7 +80448,7 @@
     }
   },
   "Kilimanjaro": {
-    "cached_at": "2026-03-17T21:20:17.098653+00:00",
+    "cached_at": "2026-03-17T21:32:35.226831+00:00",
     "data": {
       "location": {
         "name": "Barangata",
@@ -80457,12 +80457,12 @@
         "lat": -3.183,
         "lon": 37.25,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782417,
-        "localtime": "2026-03-18 00:20"
+        "localtime_epoch": 1773783159,
+        "localtime": "2026-03-18 00:32"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 17.0,
         "temp_f": 62.6,
         "is_day": 0,
@@ -83800,7 +83800,7 @@
     }
   },
   "Pwani": {
-    "cached_at": "2026-03-17T21:20:17.679601+00:00",
+    "cached_at": "2026-03-17T21:32:35.745559+00:00",
     "data": {
       "location": {
         "name": "Mziwaziwa",
@@ -83809,8 +83809,8 @@
         "lat": -6.8,
         "lon": 38.9,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782345,
-        "localtime": "2026-03-18 00:19"
+        "localtime_epoch": 1773782869,
+        "localtime": "2026-03-18 00:27"
       },
       "current": {
         "last_updated_epoch": 1773782100,
@@ -87152,7 +87152,7 @@
     }
   },
   "Kagera": {
-    "cached_at": "2026-03-17T21:20:18.928869+00:00",
+    "cached_at": "2026-03-17T21:32:36.283535+00:00",
     "data": {
       "location": {
         "name": "Kasumba",
@@ -87161,12 +87161,12 @@
         "lat": -0.974,
         "lon": 30.991,
         "tz_id": "Africa/Kampala",
-        "localtime_epoch": 1773782345,
-        "localtime": "2026-03-18 00:19"
+        "localtime_epoch": 1773783120,
+        "localtime": "2026-03-18 00:32"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 19.5,
         "temp_f": 67.1,
         "is_day": 0,
@@ -90504,7 +90504,7 @@
     }
   },
   "Njombe": {
-    "cached_at": "2026-03-17T21:20:19.623918+00:00",
+    "cached_at": "2026-03-17T21:32:36.799563+00:00",
     "data": {
       "location": {
         "name": "Kwakimindo",
@@ -93856,7 +93856,7 @@
     }
   },
   "Kusini Unguja": {
-    "cached_at": "2026-03-17T21:20:20.253314+00:00",
+    "cached_at": "2026-03-17T21:32:37.326284+00:00",
     "data": {
       "location": {
         "name": "Mseweni",
@@ -93865,12 +93865,12 @@
         "lat": -6.2,
         "lon": 39.35,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782140,
-        "localtime": "2026-03-18 00:15"
+        "localtime_epoch": 1773783195,
+        "localtime": "2026-03-18 00:33"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 25.6,
         "temp_f": 78.1,
         "is_day": 0,
@@ -97208,7 +97208,7 @@
     }
   },
   "Kaskazini Unguja": {
-    "cached_at": "2026-03-17T21:20:20.796347+00:00",
+    "cached_at": "2026-03-17T21:32:37.891648+00:00",
     "data": {
       "location": {
         "name": "Bomalandani",
@@ -97217,12 +97217,12 @@
         "lat": -4.867,
         "lon": 39.2,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782213,
-        "localtime": "2026-03-18 00:16"
+        "localtime_epoch": 1773783196,
+        "localtime": "2026-03-18 00:33"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 27.1,
         "temp_f": 80.7,
         "is_day": 0,
@@ -100560,7 +100560,7 @@
     }
   },
   "Kusini Pemba": {
-    "cached_at": "2026-03-17T21:20:21.474484+00:00",
+    "cached_at": "2026-03-17T21:32:38.420235+00:00",
     "data": {
       "location": {
         "name": "Kichungwani",
@@ -100569,12 +100569,12 @@
         "lat": -5.2,
         "lon": 39.75,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773781326,
-        "localtime": "2026-03-18 00:02"
+        "localtime_epoch": 1773782141,
+        "localtime": "2026-03-18 00:15"
       },
       "current": {
-        "last_updated_epoch": 1773781200,
-        "last_updated": "2026-03-18 00:00",
+        "last_updated_epoch": 1773782100,
+        "last_updated": "2026-03-18 00:15",
         "temp_c": 26.8,
         "temp_f": 80.3,
         "is_day": 0,
@@ -103912,7 +103912,7 @@
     }
   },
   "Kaskazini Pemba": {
-    "cached_at": "2026-03-17T21:20:22.033542+00:00",
+    "cached_at": "2026-03-17T21:32:38.975036+00:00",
     "data": {
       "location": {
         "name": "Finga",
@@ -107264,7 +107264,7 @@
     }
   },
   "Mjini Magharibi": {
-    "cached_at": "2026-03-17T21:20:22.571619+00:00",
+    "cached_at": "2026-03-17T21:32:39.525802+00:00",
     "data": {
       "location": {
         "name": "Ngambo",
@@ -107273,12 +107273,12 @@
         "lat": -6.167,
         "lon": 39.2,
         "tz_id": "Africa/Dar_es_Salaam",
-        "localtime_epoch": 1773782422,
-        "localtime": "2026-03-18 00:20"
+        "localtime_epoch": 1773783124,
+        "localtime": "2026-03-18 00:32"
       },
       "current": {
-        "last_updated_epoch": 1773782100,
-        "last_updated": "2026-03-18 00:15",
+        "last_updated_epoch": 1773783000,
+        "last_updated": "2026-03-18 00:30",
         "temp_c": 26.0,
         "temp_f": 78.7,
         "is_day": 0,

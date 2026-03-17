@@ -1,0 +1,182 @@
+[
+  {
+    "timestamp": "2026-03-17T21:27:53.477960+00:00",
+    "provider": "twilio",
+    "status": "SKIPPED",
+    "city": "Morogoro",
+    "event": "rain",
+    "message_id": "",
+    "detail": "twilio_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.478961+00:00",
+    "provider": "sendgrid",
+    "status": "SKIPPED",
+    "city": "Morogoro",
+    "event": "rain",
+    "message_id": "",
+    "detail": "sendgrid_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.485478+00:00",
+    "provider": "twilio",
+    "status": "SKIPPED",
+    "city": "Tanga",
+    "event": "rain",
+    "message_id": "",
+    "detail": "twilio_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.490499+00:00",
+    "provider": "sendgrid",
+    "status": "SKIPPED",
+    "city": "Tanga",
+    "event": "rain",
+    "message_id": "",
+    "detail": "sendgrid_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.495504+00:00",
+    "provider": "twilio",
+    "status": "SKIPPED",
+    "city": "Sumbawanga",
+    "event": "rain",
+    "message_id": "",
+    "detail": "twilio_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.499506+00:00",
+    "provider": "sendgrid",
+    "status": "SKIPPED",
+    "city": "Sumbawanga",
+    "event": "rain",
+    "message_id": "",
+    "detail": "sendgrid_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.504974+00:00",
+    "provider": "twilio",
+    "status": "SKIPPED",
+    "city": "Musoma",
+    "event": "rain",
+    "message_id": "",
+    "detail": "twilio_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.508974+00:00",
+    "provider": "sendgrid",
+    "status": "SKIPPED",
+    "city": "Musoma",
+    "event": "rain",
+    "message_id": "",
+    "detail": "sendgrid_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.514489+00:00",
+    "provider": "twilio",
+    "status": "SKIPPED",
+    "city": "Tabora",
+    "event": "rain",
+    "message_id": "",
+    "detail": "twilio_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.519491+00:00",
+    "provider": "sendgrid",
+    "status": "SKIPPED",
+    "city": "Tabora",
+    "event": "rain",
+    "message_id": "",
+    "detail": "sendgrid_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.523998+00:00",
+    "provider": "twilio",
+    "status": "SKIPPED",
+    "city": "Singida",
+    "event": "rain",
+    "message_id": "",
+    "detail": "twilio_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.530505+00:00",
+    "provider": "sendgrid",
+    "status": "SKIPPED",
+    "city": "Singida",
+    "event": "rain",
+    "message_id": "",
+    "detail": "sendgrid_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.535505+00:00",
+    "provider": "twilio",
+    "status": "SKIPPED",
+    "city": "Rukwa",
+    "event": "rain",
+    "message_id": "",
+    "detail": "twilio_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.540010+00:00",
+    "provider": "sendgrid",
+    "status": "SKIPPED",
+    "city": "Rukwa",
+    "event": "rain",
+    "message_id": "",
+    "detail": "sendgrid_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.545018+00:00",
+    "provider": "twilio",
+    "status": "SKIPPED",
+    "city": "Manyara",
+    "event": "rain",
+    "message_id": "",
+    "detail": "twilio_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.550014+00:00",
+    "provider": "sendgrid",
+    "status": "SKIPPED",
+    "city": "Manyara",
+    "event": "rain",
+    "message_id": "",
+    "detail": "sendgrid_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.556045+00:00",
+    "provider": "twilio",
+    "status": "SKIPPED",
+    "city": "Kagera",
+    "event": "rain",
+    "message_id": "",
+    "detail": "twilio_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.561559+00:00",
+    "provider": "sendgrid",
+    "status": "SKIPPED",
+    "city": "Kagera",
+    "event": "rain",
+    "message_id": "",
+    "detail": "sendgrid_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.567558+00:00",
+    "provider": "twilio",
+    "status": "SKIPPED",
+    "city": "Kaskazini Unguja",
+    "event": "rain",
+    "message_id": "",
+    "detail": "twilio_not_configured"
+  },
+  {
+    "timestamp": "2026-03-17T21:27:53.572074+00:00",
+    "provider": "sendgrid",
+    "status": "SKIPPED",
+    "city": "Kaskazini Unguja",
+    "event": "rain",
+    "message_id": "",
+    "detail": "sendgrid_not_configured"
+  }
+]

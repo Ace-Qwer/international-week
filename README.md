@@ -19,3 +19,21 @@ New capabilities
 - Security logs include user role, session ID, source host/process.
 - Region cards and smart panel show risk scores (0-100) with top factors.
 - Weather fetch uses local fallback cache when API/network is unavailable.
+- Incident workflow tab supports `open -> acknowledged -> assigned -> resolved` with notes.
+- Interactive risk map uses GeoJSON points in `regions.geojson` with color overlays.
+- Delivery tracking writes provider statuses to `delivery_status.json`.
+
+Provider configuration (optional)
+- Twilio SMS:
+	- `TWILIO_ACCOUNT_SID`
+	- `TWILIO_AUTH_TOKEN`
+	- `TWILIO_FROM_NUMBER`
+	- `TWILIO_TO_NUMBERS` (comma-separated)
+- SendGrid email:
+	- `SENDGRID_API_KEY`
+	- `SENDGRID_FROM_EMAIL`
+	- `SENDGRID_TO_EMAILS` (comma-separated)
+
+If provider env vars are missing, dispatch is skipped and recorded as `SKIPPED` in delivery tracking.
+
+SendGrid is disabled by default. To enable later, set `ENABLE_SENDGRID=true`.

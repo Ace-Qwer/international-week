@@ -1,0 +1,434 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dar es Salaam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.2083,
+          -6.7924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dodoma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7516,
+          -6.162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arusha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.683,
+          -3.3869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mwanza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.9001,
+          -2.5167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mbeya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.4833,
+          -8.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zanzibar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.197,
+          -6.163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Morogoro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6667,
+          -6.8167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1,
+          -5.0667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kigoma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.6267,
+          -4.8824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moshi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.34,
+          -3.34
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sumbawanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.6169,
+          -7.9489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Songea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.65,
+          -10.6833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kahama"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6,
+          -3.8333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mpanda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.0695,
+          -6.3438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Musoma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.8,
+          -1.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shinyanga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.4333,
+          -3.6667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tabora"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8,
+          -5.0167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Singida"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.75,
+          -4.8167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rukwa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.5,
+          -7.8667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ruvuma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7667,
+          -10.6333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manyara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.75,
+          -3.8667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Katavi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.4,
+          -6.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Geita"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.2,
+          -2.85
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Songwe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.5,
+          -9.3
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kilimanjaro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.3556,
+          -3.0674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pwani"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.9,
+          -6.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kagera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.0,
+          -1.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Njombe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7,
+          -9.3333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kusini Unguja"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.35,
+          -6.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kaskazini Unguja"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.3,
+          -5.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kusini Pemba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.75,
+          -5.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kaskazini Pemba"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.7,
+          -5.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mjini Magharibi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.2,
+          -6.16
+        ]
+      }
+    }
+  ]
+}
