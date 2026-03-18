@@ -6,7 +6,8 @@
       "password": {
         "salt": "4699987b415ce79518ba2fa503c57e03",
         "hash": "903bde7512a2a2cdf898546aa5c564ee7bd4329db067e465aff5a7e92935d719"
-      }
+      },
+      "totp_secret": null
     },
     {
       "username": "farmer",
@@ -14,7 +15,8 @@
       "password": {
         "salt": "aaa889fac5d9008be1b752d7f83915e2",
         "hash": "b197081e43078b67dcc05aaee50bad344723113aa42b66658d845c3f48af3637"
-      }
+      },
+      "totp_secret": null
     },
     {
       "username": "viewer",
@@ -22,7 +24,8 @@
       "password": {
         "salt": "3b6fa78b783fb581b9c88934d2af460a",
         "hash": "58726e92bc24bb8383e96a4ec3065863d7b9b35ae659acf2c16e73866770a483"
-      }
+      },
+      "totp_secret": null
     }
   ]
 }

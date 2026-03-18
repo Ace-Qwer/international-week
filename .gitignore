@@ -4,3 +4,8 @@ __pycache__/
 
 # Logs
 alert_log.xml
+audit.log
+security_audit.log
+
+# Environment variables
+.env

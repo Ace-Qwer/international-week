@@ -15,6 +15,10 @@ import time
 import uuid
 from datetime import datetime
 
+import pyotp
+import qrcode
+from PIL import Image, ImageTk
+
 import tkinter as tk
 from tkinter import messagebox, ttk
 
@@ -98,12 +102,36 @@ def _verify_password(password, record):
     return hmac.compare_digest(calc, record.get("hash", ""))
 
 
+def _generate_totp_secret():
+    """Generate a new TOTP secret for a user."""
+    return pyotp.random_base32()
+
+
+def _get_totp_uri(username, secret):
+    """Generate TOTP URI for QR code."""
+    return pyotp.totp.TOTP(secret).provisioning_uri(name=username, issuer_name="Farmer Alert")
+
+
+def _verify_totp_code(secret, code):
+    """Verify a TOTP code against the secret."""
+    if not secret:
+        return True  # No 2FA setup, allow login
+    totp = pyotp.TOTP(secret)
+    return totp.verify(code)
+
+
 def _ensure_user_store():
     if os.path.exists(USERS_FILE):
         try:
             with open(USERS_FILE, "r", encoding="utf-8") as f:
                 payload = json.load(f)
             if isinstance(payload, dict) and isinstance(payload.get("users"), list):
+                # Migrate existing users to include totp_secret if missing
+                for user in payload["users"]:
+                    if "totp_secret" not in user:
+                        user["totp_secret"] = None
+                with open(USERS_FILE, "w", encoding="utf-8") as f:
+                    json.dump(payload, f, ensure_ascii=True, indent=2)
                 return
         except Exception:
             pass
@@ -120,6 +148,7 @@ def _ensure_user_store():
                 "username": user["username"],
                 "role": user["role"],
                 "password": _hash_password(user["password"]),
+                "totp_secret": None,  # No 2FA initially
             }
         )
     with open(USERS_FILE, "w", encoding="utf-8") as f:
@@ -138,9 +167,63 @@ def _authenticate_user(username, password):
         if user.get("username") != username:
             continue
         if _verify_password(password, user.get("password")):
-            return {"username": username, "role": user.get("role", "viewer")}
+            return {
+                "username": username,
+                "role": user.get("role", "viewer"),
+                "totp_secret": user.get("totp_secret"),
+                "requires_2fa": user.get("totp_secret") is not None
+            }
         return None
     return None
+
+
+def _setup_user_2fa(username, secret):
+    """Set up 2FA for a user."""
+    try:
+        with open(USERS_FILE, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return False
+
+    for user in payload.get("users", []):
+        if user.get("username") == username:
+            user["totp_secret"] = secret
+            with open(USERS_FILE, "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=True, indent=2)
+            return True
+    return False
+
+
+def _verify_user_2fa(username, code):
+    """Verify 2FA code for a user."""
+    try:
+        with open(USERS_FILE, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return False
+
+    for user in payload.get("users", []):
+        if user.get("username") == username:
+            secret = user.get("totp_secret")
+            return _verify_totp_code(secret, code)
+    return False
+
+
+def _disable_user_2fa(username):
+    """Disable 2FA for a user."""
+    try:
+        with open(USERS_FILE, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return False
+
+    for user in payload.get("users", []):
+        if user.get("username") == username:
+            user["totp_secret"] = None
+            with open(USERS_FILE, "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=True, indent=2)
+            return True
+    return False
 
 
 def _parse_audit_line(line):
@@ -499,9 +582,15 @@ class LoginScreen(tk.Frame):
         auth = _authenticate_user(user, pwd)
         if auth:
             self._failed_attempts = 0
-            audit_log(user=user, action="LOGIN_SUCCESS", status="OK",
-                      role=auth["role"], detail="dashboard_access_granted")
-            self._on_success(auth)
+            if auth.get("requires_2fa"):
+                # Show 2FA dialog
+                TwoFADialog(self.master, auth, self._on_success)
+                audit_log(user=user, action="LOGIN_2FA_REQUIRED", status="OK",
+                          role=auth["role"], detail="2fa_verification_pending")
+            else:
+                audit_log(user=user, action="LOGIN_SUCCESS", status="OK",
+                          role=auth["role"], detail="dashboard_access_granted")
+                self._on_success(auth)
         else:
             self._failed_attempts += 1
             left = MAX_LOGIN_ATTEMPTS - self._failed_attempts
@@ -521,6 +610,278 @@ class LoginScreen(tk.Frame):
                       detail=f"remaining_before_lockout={left}")
             self._pwd.delete(0, "end")
             self._pwd.focus()
+
+
+class TwoFADialog(tk.Toplevel):
+    def __init__(self, master, auth_data, on_success):
+        super().__init__(master)
+        self.auth_data = auth_data
+        self.on_success = on_success
+        self.title("Two-Factor Authentication")
+        self.geometry("400x300")
+        self.resizable(False, False)
+        self.configure(bg=C["bg"])
+        self.transient(master)
+        self.grab_set()
+        self._build()
+
+    def _build(self):
+        # Title
+        tk.Label(self, text="Enter 2FA Code",
+                 font=("Courier New", 16, "bold"),
+                 bg=C["bg"], fg=C["accent"]).pack(pady=20)
+
+        tk.Label(self, text=f"Hello, {self.auth_data['username']}!",
+                 font=("Courier New", 10),
+                 bg=C["bg"], fg=C["text"]).pack(pady=(0, 10))
+
+        tk.Label(self, text="Enter the 6-digit code from your\n authenticator app:",
+                 font=("Courier New", 9),
+                 bg=C["bg"], fg=C["muted"]).pack(pady=(0, 20))
+
+        # Code entry
+        self.code_entry = tk.Entry(self, font=("Courier New", 14),
+                                   bg=C["bg3"], fg=C["text"],
+                                   insertbackground=C["accent2"],
+                                   relief="flat", bd=0, justify="center")
+        self.code_entry.pack(ipady=10, padx=50)
+        self.code_entry.focus()
+
+        # Error label
+        self.error_label = tk.Label(self, text="", font=("Courier New", 9),
+                                    bg=C["bg"], fg=C["danger"])
+        self.error_label.pack(pady=(10, 0))
+
+        # Verify button
+        btn = tk.Button(self, text="VERIFY",
+                        font=("Courier New", 11, "bold"),
+                        bg=C["accent"], fg="#000", relief="flat", bd=0,
+                        pady=8, cursor="hand2",
+                        activebackground=C["accent2"],
+                        activeforeground="#000",
+                        command=self._verify_code)
+        btn.pack(pady=20)
+
+        # Bind Enter key
+        self.code_entry.bind("<Return>", lambda _: self._verify_code())
+
+    def _verify_code(self):
+        code = self.code_entry.get().strip()
+        if not code:
+            self.error_label.config(text="Please enter the 2FA code")
+            return
+
+        if len(code) != 6 or not code.isdigit():
+            self.error_label.config(text="Code must be 6 digits")
+            return
+
+        if _verify_user_2fa(self.auth_data["username"], code):
+            audit_log(user=self.auth_data["username"], action="LOGIN_2FA_SUCCESS",
+                      status="OK", role=self.auth_data["role"],
+                      detail="dashboard_access_granted")
+            self.destroy()
+            self.on_success(self.auth_data)
+        else:
+            self.error_label.config(text="Invalid 2FA code")
+            audit_log(user=self.auth_data["username"], action="LOGIN_2FA_FAILED",
+                      status="WARN", detail="invalid_2fa_code")
+
+
+class TwoFAManagementDialog(tk.Toplevel):
+    def __init__(self, master, username):
+        super().__init__(master)
+        self.username = username
+        self.title("Two-Factor Authentication")
+        self.geometry("400x250")
+        self.resizable(False, False)
+        self.configure(bg=C["bg"])
+        self.transient(master)
+        self.grab_set()
+
+        # Check current 2FA status
+        self.is_enabled = self._check_2fa_status()
+        self._build()
+
+    def _check_2fa_status(self):
+        try:
+            with open(USERS_FILE, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+        except Exception:
+            return False
+
+        for user in payload.get("users", []):
+            if user.get("username") == self.username:
+                return user.get("totp_secret") is not None
+        return False
+
+    def _build(self):
+        # Title
+        tk.Label(self, text="Two-Factor Authentication",
+                 font=("Courier New", 16, "bold"),
+                 bg=C["bg"], fg=C["accent"]).pack(pady=20)
+
+        if self.is_enabled:
+            # 2FA is enabled - show disable option
+            tk.Label(self, text="2FA is currently ENABLED",
+                     font=("Courier New", 12),
+                     bg=C["bg"], fg=C["ok"]).pack(pady=(0, 10))
+
+            tk.Label(self, text="Your account is protected with\n two-factor authentication.",
+                     font=("Courier New", 9),
+                     bg=C["bg"], fg=C["text"]).pack(pady=(0, 20))
+
+            # Disable button
+            disable_btn = tk.Button(self, text="DISABLE 2FA",
+                                    font=("Courier New", 11, "bold"),
+                                    bg=C["danger"], fg="white", relief="flat", bd=0,
+                                    padx=20, pady=8, cursor="hand2",
+                                    command=self._disable_2fa)
+            disable_btn.pack(pady=10)
+        else:
+            # 2FA is disabled - show enable option
+            tk.Label(self, text="2FA is currently DISABLED",
+                     font=("Courier New", 12),
+                     bg=C["bg"], fg=C["warn"]).pack(pady=(0, 10))
+
+            tk.Label(self, text="Enable 2FA to add an extra\n layer of security to your account.",
+                     font=("Courier New", 9),
+                     bg=C["bg"], fg=C["text"]).pack(pady=(0, 20))
+
+            # Enable button
+            enable_btn = tk.Button(self, text="ENABLE 2FA",
+                                   font=("Courier New", 11, "bold"),
+                                   bg=C["ok"], fg="#000", relief="flat", bd=0,
+                                   padx=20, pady=8, cursor="hand2",
+                                   command=self._enable_2fa)
+            enable_btn.pack(pady=10)
+
+        # Cancel button
+        cancel_btn = tk.Button(self, text="CANCEL",
+                               font=("Courier New", 10),
+                               bg=C["bg3"], fg=C["text"], relief="flat", bd=0,
+                               padx=20, pady=5, cursor="hand2",
+                               command=self.destroy)
+        cancel_btn.pack(pady=(10, 0))
+
+    def _enable_2fa(self):
+        self.destroy()
+        TwoFASetupDialog(self.master, self.username)
+
+    def _disable_2fa(self):
+        if messagebox.askyesno("Disable 2FA",
+                               "Are you sure you want to disable two-factor authentication?\n\n"
+                               "This will make your account less secure.",
+                               icon="warning"):
+            if _disable_user_2fa(self.username):
+                messagebox.showinfo("Success", "Two-factor authentication has been disabled for your account.")
+                audit_log(user=self.username, action="2FA_DISABLED",
+                          status="OK", detail="2fa_disabled_by_user")
+                self.destroy()
+            else:
+                messagebox.showerror("Error", "Failed to disable 2FA. Please try again.")
+
+
+class TwoFASetupDialog(tk.Toplevel):
+    def __init__(self, master, username):
+        super().__init__(master)
+        self.username = username
+        self.secret = _generate_totp_secret()
+        self.title("Setup Two-Factor Authentication")
+        self.geometry("500x600")
+        self.resizable(False, False)
+        self.configure(bg=C["bg"])
+        self.transient(master)
+        self.grab_set()
+        self._build()
+
+    def _build(self):
+        # Title
+        tk.Label(self, text="Setup 2FA",
+                 font=("Courier New", 16, "bold"),
+                 bg=C["bg"], fg=C["accent"]).pack(pady=20)
+
+        tk.Label(self, text="Scan the QR code with your\n authenticator app:",
+                 font=("Courier New", 10),
+                 bg=C["bg"], fg=C["text"]).pack(pady=(0, 20))
+
+        # QR Code
+        uri = _get_totp_uri(self.username, self.secret)
+        qr = qrcode.QRCode(version=1, box_size=5, border=2)
+        qr.add_data(uri)
+        qr.make(fit=True)
+        qr_img = qr.make_image(fill_color="black", back_color="white")
+
+        # Convert PIL to Tkinter
+        self.qr_photo = ImageTk.PhotoImage(qr_img)
+        qr_label = tk.Label(self, image=self.qr_photo, bg=C["bg"])
+        qr_label.pack(pady=(0, 20))
+
+        # Manual entry
+        tk.Label(self, text="Or enter this code manually:",
+                 font=("Courier New", 9),
+                 bg=C["bg"], fg=C["muted"]).pack()
+
+        code_frame = tk.Frame(self, bg=C["bg3"], padx=10, pady=5)
+        code_frame.pack(pady=(5, 20))
+        code_label = tk.Label(code_frame, text=self.secret,
+                              font=("Courier New", 10, "bold"),
+                              bg=C["bg3"], fg=C["accent"])
+        code_label.pack()
+
+        # Test code entry
+        tk.Label(self, text="Enter a test code to verify:",
+                 font=("Courier New", 9),
+                 bg=C["bg"], fg=C["muted"]).pack()
+
+        self.test_entry = tk.Entry(self, font=("Courier New", 12),
+                                   bg=C["bg3"], fg=C["text"],
+                                   insertbackground=C["accent2"],
+                                   relief="flat", bd=0, justify="center")
+        self.test_entry.pack(ipady=8, padx=50, pady=(5, 10))
+
+        # Error label
+        self.error_label = tk.Label(self, text="", font=("Courier New", 9),
+                                    bg=C["bg"], fg=C["danger"])
+        self.error_label.pack(pady=(0, 10))
+
+        # Buttons
+        btn_frame = tk.Frame(self, bg=C["bg"])
+        btn_frame.pack(pady=10)
+
+        cancel_btn = tk.Button(btn_frame, text="CANCEL",
+                               font=("Courier New", 10),
+                               bg=C["bg3"], fg=C["text"], relief="flat", bd=0,
+                               padx=20, pady=5, cursor="hand2",
+                               command=self.destroy)
+        cancel_btn.pack(side="left", padx=5)
+
+        enable_btn = tk.Button(btn_frame, text="ENABLE 2FA",
+                               font=("Courier New", 10, "bold"),
+                               bg=C["ok"], fg="#000", relief="flat", bd=0,
+                               padx=20, pady=5, cursor="hand2",
+                               command=self._enable_2fa)
+        enable_btn.pack(side="left", padx=5)
+
+    def _enable_2fa(self):
+        test_code = self.test_entry.get().strip()
+        if not test_code:
+            self.error_label.config(text="Please enter a test code")
+            return
+
+        if len(test_code) != 6 or not test_code.isdigit():
+            self.error_label.config(text="Code must be 6 digits")
+            return
+
+        if _verify_totp_code(self.secret, test_code):
+            if _setup_user_2fa(self.username, self.secret):
+                messagebox.showinfo("Success", "2FA has been enabled for your account!")
+                audit_log(user=self.username, action="2FA_SETUP_SUCCESS",
+                          status="OK", detail="2fa_enabled")
+                self.destroy()
+            else:
+                self.error_label.config(text="Failed to save 2FA settings")
+        else:
+            self.error_label.config(text="Invalid test code")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -559,9 +920,16 @@ class Dashboard(tk.Frame):
                                        number=f"RGN-{city}", region=city)
 
         self._apply_ttk_styles()
+        self._last_activity = time.time()
+        self._session_timeout = 30 * 60  # 30 minutes
         self._build()
         self._sec_log(action="DASHBOARD_LOGIN", status="OK",
                       detail="dashboard_opened")
+        self._check_session_timeout()
+        # Bind activity events
+        self.master.bind_all("<Key>", self._update_activity)
+        self.master.bind_all("<Button>", self._update_activity)
+        self.master.bind_all("<Motion>", self._update_activity)
         self.master.after(200, self._bring_front)
         self.master.after(400, lambda: threading.Thread(
             target=self._fetch_all, daemon=True).start())
@@ -634,6 +1002,16 @@ class Dashboard(tk.Frame):
         tk.Label(right, textvariable=self._clock_var,
                  font=("Courier New", 13),
                  bg=C["bg2"], fg=C["muted"]).pack(side="left", padx=(0, 20))
+
+        # 2FA setup
+        fa = tk.Button(right, text="2FA",
+                       font=("Courier New", 9, "bold"),
+                       bg=C["bg3"], fg=C["accent"], relief="flat", bd=0,
+                       padx=10, pady=4, cursor="hand2",
+                       activebackground=C["accent2"],
+                       activeforeground="#000",
+                       command=self._setup_2fa)
+        fa.pack(side="left", padx=(0, 10))
 
         # logout
         lo = tk.Button(right, text="LOGOUT",
@@ -1269,6 +1647,15 @@ class Dashboard(tk.Frame):
             age = int(time.time() - self._last_refresh_ts)
             self._ins_data_age.set(f"Data age: {age}s")
         self.after(1000, self._tick)
+        self._check_session_timeout()
+
+    def _check_session_timeout(self):
+        if time.time() - self._last_activity > self._session_timeout:
+            self._sec_log(action="SESSION_TIMEOUT", status="WARN", detail="auto_logout_due_to_inactivity")
+            self._on_logout()
+
+    def _update_activity(self, event=None):
+        self._last_activity = time.time()
 
     def _bring_front(self):
         self.master.lift()
@@ -1280,6 +1667,10 @@ class Dashboard(tk.Frame):
         if messagebox.askyesno("Logout", "Return to login screen?"):
             self._sec_log(action="LOGOUT", status="OK", detail="user_requested")
             self._on_logout()
+
+    def _setup_2fa(self):
+        # Show 2FA management dialog
+        TwoFAManagementDialog(self.master, self.username)
 
     def _log(self, msg, kind="ok"):
         ts = time.strftime("%H:%M:%S")
@@ -1454,6 +1845,7 @@ class Dashboard(tk.Frame):
                     cur["_cached_at"] = data.get("_cached_at")
                 self._cache[city] = cur
                 loaded += 1
+            time.sleep(1)  # Rate limiting to avoid API throttling
 
         def apply():
             self._events.clear()
