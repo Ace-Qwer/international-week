@@ -602,3 +602,6 @@
 2026-03-18 10:58:55 | user=admin | status=OK | action=DASHBOARD_LOGIN | role=admin | session=57a7f68cf3 | city=- | event=- | source=DESKTOP-A7M8E2L:18912 | detail=dashboard_opened
 2026-03-18 10:59:00 | user=admin | status=INFO | action=REFRESH_START | role=admin | session=57a7f68cf3 | city=- | event=- | source=DESKTOP-A7M8E2L:18912 | detail=manual_refresh_triggered
 2026-03-18 10:59:56 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=57a7f68cf3 | city=- | event=- | source=DESKTOP-A7M8E2L:18912 | detail=loaded=33;total=33;flagged=21
+2026-03-18 13:37:30 | user=admin | status=OK | action=LOGIN_SUCCESS | role=admin | session=- | city=- | event=- | source=DESKTOP-A7M8E2L:18080 | detail=dashboard_access_granted
+2026-03-18 13:37:32 | user=admin | status=OK | action=DASHBOARD_LOGIN | role=admin | session=8e269245c8 | city=- | event=- | source=DESKTOP-A7M8E2L:18080 | detail=dashboard_opened
+2026-03-18 13:38:28 | user=admin | status=OK | action=REFRESH_COMPLETE | role=admin | session=8e269245c8 | city=- | event=- | source=DESKTOP-A7M8E2L:18080 | detail=loaded=33;total=33;flagged=19
