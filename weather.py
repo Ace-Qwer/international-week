@@ -1,11 +1,24 @@
 import json
+import logging
 import os
 from datetime import datetime, timezone
 
 import requests
+from dotenv import load_dotenv
+from cryptography.fernet import Fernet
 
-# Prefer environment configuration, but keep legacy fallback so existing installs keep working.
-API_KEY = os.getenv("WEATHER_API_KEY") or "6471d6b96a0646ab81f90409261703"
+# Configure audit logging
+logging.basicConfig(filename='audit.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+load_dotenv()
+
+# Decrypt the API key
+encryption_key = os.getenv("ENCRYPTION_KEY")
+encrypted_api_key = os.getenv("ENCRYPTED_API_KEY")
+if not encryption_key or not encrypted_api_key:
+    raise ValueError("ENCRYPTION_KEY and ENCRYPTED_API_KEY environment variables are required.")
+f = Fernet(encryption_key.encode())
+API_KEY = f.decrypt(encrypted_api_key.encode()).decode()
 CACHE_FILE = os.path.join(os.path.dirname(__file__), "weather_cache.json")
 
 # Expanded list of Tanzanian locations (cities and regional capitals)
@@ -78,19 +91,24 @@ def fetch_forecast(city, lat, lon):
 
     url = "https://api.weatherapi.com/v1/forecast.json"
     params = {"key": API_KEY, "q": f"{lat},{lon}", "days": 3}
+    headers = {"User-Agent": "TanzaniaWeatherAlert/1.0"}
     try:
-        response = requests.get(url, params=params, timeout=12)
-    except requests.RequestException:
+        logging.info(f"API call initiated for {city} at ({lat}, {lon})")
+        response = requests.get(url, params=params, headers=headers, timeout=12, verify=True)
+        if response and response.status_code == 200:
+            payload = response.json()
+            cache[cache_key] = {
+                "cached_at": datetime.now(timezone.utc).isoformat(),
+                "data": payload,
+            }
+            _write_cache(cache)
+            logging.info(f"API call successful for {city}")
+            return payload
+        else:
+            logging.warning(f"API call failed for {city} - status code: {response.status_code if response else 'No response'}")
+    except requests.RequestException as e:
+        logging.error(f"API call error for {city}: {str(e)}")
         response = None
-
-    if response and response.status_code == 200:
-        payload = response.json()
-        cache[cache_key] = {
-            "cached_at": datetime.now(timezone.utc).isoformat(),
-            "data": payload,
-        }
-        _write_cache(cache)
-        return payload
 
     cached = cache.get(cache_key, {})
     data = cached.get("data")
