@@ -1,22 +1,50 @@
 This is a weather-driven farmer alert system with a Tkinter admin dashboard, risk scoring, and audited operations.
 
-Quick setup
+Getting Started (For Team Members)
+
+**Clone and setup in 3 steps:**
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/Ace-Qwer/international-week.git
+cd international-week
+
+# 2. Install dependencies and setup .env
+pip install requests python-dotenv
+cp .env.example .env
+
+# 3. Add credentials to .env (use editor or command below)
+# Edit .env and add:
+# - WEATHER_API_KEY=6471d6b96a0646ab81f90409261703
+# - TWILIO credentials (if you want SMS alerts)
+
+# 4. Run!
+python main.py
+```
+
+**Login with:**
+- Username: `admin` / Password: `admin123`
+
+---
+
+Quick setup (Detailed)
 
 1. **Install dependencies:**
    ```bash
    pip install requests python-dotenv
    ```
 
-2. **Create `.env` file** (copy from `.env.example`):
+2. **Create `.env` file:**
    ```bash
    cp .env.example .env
    ```
 
-3. **Edit `.env` with your credentials:**
+3. **Edit `.env` with required credentials:**
    ```
-   WEATHER_API_KEY=your_weatherapi_key_here
+   # REQUIRED - Weather alerts won't work without this
+   WEATHER_API_KEY=6471d6b96a0646ab81f90409261703
    
-   # Twilio (for SMS alerts to farmers)
+   # OPTIONAL - For SMS alerts to farmers
    TWILIO_ACCOUNT_SID=your_account_sid
    TWILIO_AUTH_TOKEN=your_auth_token
    TWILIO_FROM_NUMBER=+1234567890
@@ -26,6 +54,7 @@ Quick setup
    ```bash
    python main.py
    ```
+   Login as `admin` / `admin123`
 
 Default users
 - `admin / admin123` (full control)
