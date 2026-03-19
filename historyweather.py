@@ -44,11 +44,10 @@ for index, event in disaster_df.iterrows():
 
     print(f"🛰️ Scraping 30-day window for {region_name} leading to {event['Disaster_Type']} on {event_date.date()}")
 
-    # 3. Lookback Logic: 30 days BEFORE the disaster
+
     for day_offset in range(30, -1, -1):
         target_date = (event_date - timedelta(days=day_offset)).strftime("%Y-%m-%d")
         
-        # We use 'target_date' here, not 'i'
         data = fetch_historical(lat, lon, target_date)
         
         if data and "forecast" in data:
@@ -60,10 +59,11 @@ for index, event in disaster_df.iterrows():
                 "max_temp": day.get('maxtemp_c'),
                 "total_precip": day.get('totalprecip_mm'),
                 "humidity": day.get('avghumidity'),
-                # This label helps the AI distinguish precursors (0) from the actual disaster (1)
-                "is_event_day": 1 if day_offset == 0 else 0 
+                "is_event_day": 1 if day_offset == 0 else 0,
+                # 🚀 NEW: This tells the AI EXACTLY what happened at the end of the 30 days
+                "disaster_type": event['Disaster_Type'] 
             })
-            time.sleep(0.15) # Stay safe from API rate limits
+            time.sleep(0.15)
 
 # 4. Save results
 df = pd.DataFrame(all_weather_data)
