@@ -1,0 +1,131 @@
+Year,Date,Disaster_Type,Disaster_Subtype,Region,Sub_Region,Location,Latitude,Longitude,Deaths,People_Affected,Event_Description,Disaster_ID,Source
+1982,1982-03-15,Flood,,Mbeya,,Mbeya region,-8.228635,33.352816,,,,1982-0078,GDIS (PEND) + EM-DAT
+1989,1989-04-03,Flood,,Arusha,Meru,Tangazo,-3.338667,36.901636,,,,1989-0053,GDIS (PEND) + EM-DAT
+1989,1989-04-03,Flood,,Morogoro,,Mogoro,-7.92279,36.988791,,,,1989-0053,GDIS (PEND) + EM-DAT
+1989,1989-04-03,Flood,,Mtwara,,Kitunguli,-10.778478,39.117243,,,,1989-0053,GDIS (PEND) + EM-DAT
+1990,1990-04-02,Flood,,Kilimanjaro,Moshi Urban,Moshi,-3.349766,37.341978,,,,1990-0018,GDIS (PEND) + EM-DAT
+1990,1990-04-02,Flood,,Kilimanjaro,Rombo,Rombo,-3.095542,37.490726,,,,1990-0018,GDIS (PEND) + EM-DAT
+1990,1990-04-02,Flood,,Lindi,,Lindi,-9.480658,38.406946,,,,1990-0016,GDIS (PEND) + EM-DAT
+1990,1990-04-02,Flood,,Mtwara,Masasi,Masasi,-10.804737,38.895292,,,,1990-0016,GDIS (PEND) + EM-DAT
+1990,1990-04-02,Flood,,Rukwa,,Rukwa,-7.951836,31.356873,,,,1990-0018,GDIS (PEND) + EM-DAT
+1993,1993-03-15,Flood,,Tanga,Korogwe,Korogwe,-4.924641,38.310586,,,,1993-0005,GDIS (PEND) + EM-DAT
+1993,1993-03-15,Flood,,Tanga,Lushoto,Lushoto,-4.550711,38.440631,,,,1993-0005,GDIS (PEND) + EM-DAT
+1993,1993-03-15,Flood,,Tanga,Korogwe,Korogwe District,-4.924641,38.310586,,,,1993-0157,GDIS (PEND) + EM-DAT
+1994,1994-03-15,Flood,,Lindi,Kilwa,Kilwa district,-9.105683,39.024255,,,,1994-0013,GDIS (PEND) + EM-DAT
+1995,1995-03-15,Flood,,Dar Es Salaam,,Dar Es Salaam,-6.888154,39.263435,,,,1995-0109,GDIS (PEND) + EM-DAT
+1995,1995-03-15,Flood,,Mbeya,,Mbeya,-8.228635,33.352816,,,,1995-0038,GDIS (PEND) + EM-DAT
+1997,1997-04-01,Flood,,Lindi,Kilwa,Kilwa,-9.105683,39.024255,,,,1997-0049,GDIS (PEND) + EM-DAT
+1997,1997-11-01,Flood,,Tabora,,Tabora region,-5.266293,32.820191,,,,1997-0306,GDIS (PEND) + EM-DAT
+1998,1998-01-01,Flood,,Arusha,Meru,Mbuguni,-3.55803,36.902225,,,,1998-0096,GDIS (PEND) + EM-DAT
+1998,1998-05-01,Flood,,Dar Es Salaam,Kinondoni,Dar Es Salam,-6.730923,39.142561,,,,1998-0112,GDIS (PEND) + EM-DAT
+1998,1998-05-01,Flood,,Dar Es Salaam,Temeke,Temeke,-6.979832,39.409209,,,,1998-0112,GDIS (PEND) + EM-DAT
+2000,2000-12-01,Flood,Riverine flood,Mwanza,Ilemela,Nyakato,-1.250323,31.829389,36.0,1817.0,,2000-0790,GDIS (PEND) + EM-DAT
+2000,2000-12-01,Flood,Riverine flood,Mwanza,Nyamagana,Mabatini,-2.591273,32.944963,36.0,1817.0,,2000-0790,GDIS (PEND) + EM-DAT
+2000,2000-12-01,Flood,Riverine flood,Pwani,Rufiji,Rufiji,-7.942592,38.67182,36.0,1817.0,,2000-0790,GDIS (PEND) + EM-DAT
+2000,2000-12-01,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,36.0,1817.0,Riverine flood,,EM-DAT (CRED)
+2001,2001-03-01,Flood,Flash flood,Dar Es Salaam,Kinondoni,Kigogo,-6.816139,39.249006,5.0,200.0,,2001-0109,GDIS (PEND) + EM-DAT
+2001,2001-03-01,Flood,Flash flood,Dar Es Salaam,Kinondoni,Manzese,-6.797857,39.231197,5.0,200.0,,2001-0109,GDIS (PEND) + EM-DAT
+2001,2001-03-01,Flood,Flash flood,Dar Es Salaam,Kinondoni,Ubungo area.,-6.787859,39.205605,5.0,200.0,,2001-0109,GDIS (PEND) + EM-DAT
+2001,2001-03-01,Flood,Flash flood,Tanzania (national),,Tanzania (national),,,5.0,200.0,Flash flood,,EM-DAT (CRED)
+2002,2002-04-01,Flood,Riverine flood,Geita,,Geita district,-3.300131,31.900888,9.0,1200.0,,2002-0274,GDIS (PEND) + EM-DAT
+2002,2002-04-01,Flood,Riverine flood,Mbeya,Kyela,Kyela district,-9.534913,33.870428,9.0,1200.0,,2002-0274,GDIS (PEND) + EM-DAT
+2002,2002-04-01,Flood,Riverine flood,Mwanza,,Mwanza region,-2.381144,32.82076,9.0,1200.0,,2002-0274,GDIS (PEND) + EM-DAT
+2002,2002-04-01,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,9.0,1200.0,Riverine flood,,EM-DAT (CRED)
+2003,2003-01-01,Drought,Drought,Tanzania (national),,Tanzania (national),,,,1900000.0,Drought,,EM-DAT (CRED)
+2003,2003-11-01,Flood,Riverine flood,Kilimanjaro,Same,Same district,-4.218529,37.897039,0.0,2000.0,,2003-0620,GDIS (PEND) + EM-DAT
+2003,2003-11-01,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,,2000.0,Riverine flood,,EM-DAT (CRED)
+2004,2004-01-01,Drought,Drought,Tanzania (national),,Tanzania (national),,,,254000.0,Drought,,EM-DAT (CRED)
+2005,2005-04-17,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,1.0,10548.0,Riverine flood,,EM-DAT (CRED)
+2005,2005-04-17,Flood,Riverine flood,Zanzibar West,Magharibi,Mjini Magharibi,-6.171314,39.250858,1.0,10548.0,,2005-0212,GDIS (PEND) + EM-DAT
+2006,2005-10-01,Drought,Drought,Tanzania (national),,Tanzania (national),,,,3700000.0,Drought,,EM-DAT (CRED)
+2006,2006-12-01,Flood,Riverine flood,Dodoma,,Dodoma,-5.929554,35.921328,0.0,21528.0,,2006-0624,GDIS (PEND) + EM-DAT
+2006,2006-12-01,Flood,Riverine flood,Iringa,,Iringa,-7.802992,35.477163,0.0,21528.0,,2006-0624,GDIS (PEND) + EM-DAT
+2006,2006-05-10,Flood,Riverine flood,Kilimanjaro,Moshi Urban,Moshi,-3.349766,37.341978,0.0,21528.0,,2006-0255,GDIS (PEND) + EM-DAT
+2006,2006-05-10,Flood,Riverine flood,Kilimanjaro,Rombo,Kilimandjaro,-3.095542,37.490726,0.0,21528.0,,2006-0255,GDIS (PEND) + EM-DAT
+2006,2006-12-01,Flood,Riverine flood,Mbeya,,Mbeya,-8.228635,33.352816,0.0,21528.0,,2006-0624,GDIS (PEND) + EM-DAT
+2006,2006-12-01,Flood,Riverine flood,Mwanza,,Mwanza,-2.381144,32.82076,0.0,21528.0,,2006-0624,GDIS (PEND) + EM-DAT
+2006,2006-12-01,Flood,Riverine flood,Shinyanga,,Shinyanga,-3.755111,32.935671,0.0,21528.0,,2006-0624,GDIS (PEND) + EM-DAT
+2006,2006-12-01,Flood,Riverine flood,Tabora,,Tabora,-5.266293,32.820191,0.0,21528.0,,2006-0624,GDIS (PEND) + EM-DAT
+2006,2006-12-01,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,,21528.0,Riverine flood,,EM-DAT (CRED)
+2008,2008-03-01,Flood,Flood (General) / Riverine flood,Arusha,Meru,Mirerani,-3.338667,36.901636,73.0,9457.0,,2008-0127,GDIS (PEND) + EM-DAT
+2008,2008-01-01,Flood,Flood (General) / Riverine flood,Kigoma,,Kigoma,-4.762246,30.404606,73.0,9457.0,,2008-0066,GDIS (PEND) + EM-DAT
+2008,2008-01-01,Flood,Flood (General) / Riverine flood,Manyara,,Manyara,-4.531698,36.545341,73.0,9457.0,,2008-0066,GDIS (PEND) + EM-DAT
+2008,2008-03-01,Flood,Flood (General) / Riverine flood,Manyara,,Manyara region,-4.531698,36.545341,73.0,9457.0,,2008-0127,GDIS (PEND) + EM-DAT
+2008,2008-01-01,Flood,Flood (General) / Riverine flood,Pwani,,Pwani,-7.268659,38.661611,73.0,9457.0,,2008-0066,GDIS (PEND) + EM-DAT
+2008,2008-01-01,Flood,Flood (General) / Riverine flood,Rukwa,,Rukwa,-7.951836,31.356873,73.0,9457.0,,2008-0066,GDIS (PEND) + EM-DAT
+2008,2008-01-01,Flood,Flood (General) / Riverine flood,Ruvuma,,Ruvuma,-10.729839,36.246956,73.0,9457.0,,2008-0066,GDIS (PEND) + EM-DAT
+2008,2008-01-01,Flood,Flood (General),Tanzania (national),,Tanzania (national),,,72.0,7957.0,Flood (General),,EM-DAT (CRED)
+2008,2008-01-01,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,1.0,1500.0,Riverine flood,,EM-DAT (CRED)
+2009,2009-11-01,Flood,Riverine flood,Arusha,,Arusha,-2.971649,35.922795,38.0,50000.0,,2009-0591,GDIS (PEND) + EM-DAT
+2009,2009-11-01,Flood,Riverine flood,Dodoma,Mpwapwa,Mpwapwa,-6.762119,36.333444,38.0,50000.0,,2009-0591,GDIS (PEND) + EM-DAT
+2009,2009-11-01,Flood,Riverine flood,Dodoma,Kongwa,Pandambili,-6.0868,36.730973,38.0,50000.0,,2009-0591,GDIS (PEND) + EM-DAT
+2009,2009-12-01,Flood,Riverine flood,Dodoma,,Dodoma,-5.929554,35.921328,38.0,50000.0,,2009-0484,GDIS (PEND) + EM-DAT
+2009,2009-12-01,Flood,Riverine flood,Kilimanjaro,Same,Same district,-4.218529,37.897039,38.0,50000.0,,2009-0484,GDIS (PEND) + EM-DAT
+2009,2009-11-01,Flood,Riverine flood,Lindi,Kilwa,Kilwa,-9.105683,39.024255,38.0,50000.0,,2009-0591,GDIS (PEND) + EM-DAT
+2009,2009-11-01,Flood,Riverine flood,Mara,,Mara,-1.712655,34.075213,38.0,50000.0,,2009-0591,GDIS (PEND) + EM-DAT
+2009,2009-12-01,Flood,Riverine flood,Morogoro,,Morogoro,-7.92279,36.988791,38.0,50000.0,,2009-0484,GDIS (PEND) + EM-DAT
+2009,2009-11-01,Flood,Riverine flood,Morogoro,Kilosa,Kilosa,-6.975133,36.999861,38.0,50000.0,,2009-0591,GDIS (PEND) + EM-DAT
+2009,2009-11-01,Flood,Riverine flood,Mwanza,,Mwanza,-2.381144,32.82076,38.0,50000.0,,2009-0591,GDIS (PEND) + EM-DAT
+2009,2009-11-01,Flood,Riverine flood,Ruvuma,,Ruvuma,-10.729839,36.246956,38.0,50000.0,,2009-0591,GDIS (PEND) + EM-DAT
+2009,2009-11-01,Flood,Riverine flood,Shinyanga,,Shinyanga,-3.755111,32.935671,38.0,50000.0,,2009-0591,GDIS (PEND) + EM-DAT
+2009,2009-11-01,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,38.0,50000.0,Riverine flood,,EM-DAT (CRED)
+2011,2011-07-01,Drought,Drought,Tanzania (national),,Tanzania (national),,,,1000000.0,Drought,,EM-DAT (CRED)
+2011,2011-12-20,Flood,Riverine flood,Dar Es Salaam,Kinondoni,Kigogo,-6.816139,39.249006,37.0,65976.0,,2011-0535,GDIS (PEND) + EM-DAT
+2011,2011-12-20,Flood,Riverine flood,Dar Es Salaam,Kinondoni,Mwananyamala,-6.785497,39.259314,37.0,65976.0,,2011-0535,GDIS (PEND) + EM-DAT
+2011,2011-12-20,Flood,Riverine flood,Dar Es Salaam,Kinondoni,Tandale,-6.794312,39.242349,37.0,65976.0,,2011-0535,GDIS (PEND) + EM-DAT
+2011,2011-12-20,Flood,Riverine flood,Dar Es Salaam,Kinondoni,Ubungo,-6.787859,39.205605,37.0,65976.0,,2011-0535,GDIS (PEND) + EM-DAT
+2011,2011-12-01,Flood,Riverine flood,Kilimanjaro,,Kilimanjaro,-3.76321,37.639993,37.0,65976.0,,2011-0634,GDIS (PEND) + EM-DAT
+2011,2011-12-01,Flood,Riverine flood,Mbeya,,Mbeya,-8.228635,33.352816,37.0,65976.0,,2011-0634,GDIS (PEND) + EM-DAT
+2011,2011-12-20,Flood,Riverine flood,Morogoro,,Morogoro,-7.92279,36.988791,37.0,65976.0,,2011-0617,GDIS (PEND) + EM-DAT
+2011,2011-12-20,Flood,Riverine flood,Tanga,,Tanga,-5.217677,38.281644,37.0,65976.0,,2011-0617,GDIS (PEND) + EM-DAT
+2011,2011-12-20,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,37.0,65976.0,Riverine flood,,EM-DAT (CRED)
+2012,2012-01-01,Flood,Riverine flood,Arusha,Ngorongoro,Ngorongoro district,-2.677124,35.495318,10.0,0.0,,2012-0072,GDIS (PEND) + EM-DAT
+2012,2012-01-01,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,10.0,,Riverine flood,,EM-DAT (CRED)
+2014,2014-04-10,Flood,Flash flood / Riverine flood,Dar Es Salaam,,Dar Es Salaam,-6.888154,39.263435,31.0,40000.0,,2014-0119,GDIS (PEND) + EM-DAT
+2014,2014-01-21,Flood,Flash flood / Riverine flood,Dodoma,,Dodoma,-5.929554,35.921328,31.0,40000.0,,2014-0042,GDIS (PEND) + EM-DAT
+2014,2014-01-21,Flood,Flash flood / Riverine flood,Manyara,,Manyara,-4.531698,36.545341,31.0,40000.0,,2014-0042,GDIS (PEND) + EM-DAT
+2014,2014-04-10,Flood,Flash flood / Riverine flood,Mbeya,Kyela,Kyela,-9.534913,33.870428,31.0,40000.0,,2014-0119,GDIS (PEND) + EM-DAT
+2014,2014-01-21,Flood,Flash flood / Riverine flood,Morogoro,Kilosa,Kilosa,-6.975133,36.999861,31.0,40000.0,,2014-0042,GDIS (PEND) + EM-DAT
+2014,2014-01-21,Flood,Flash flood / Riverine flood,Morogoro,Mvomero,Mvomero,-6.522129,37.545759,31.0,40000.0,,2014-0042,GDIS (PEND) + EM-DAT
+2014,2014-04-10,Flood,Flash flood / Riverine flood,Morogoro,,Morogoro,-7.92279,36.988791,31.0,40000.0,,2014-0119,GDIS (PEND) + EM-DAT
+2014,2014-01-21,Flood,Flash flood / Riverine flood,Tanga,,Tanga,-5.217677,38.281644,31.0,40000.0,,2014-0042,GDIS (PEND) + EM-DAT
+2014,2014-01-21,Flood,Flash flood,Tanzania (national),,Tanzania (national),,,3.0,20000.0,Flash flood,,EM-DAT (CRED)
+2014,2014-01-21,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,28.0,20000.0,Riverine flood,,EM-DAT (CRED)
+2015,2015-05-07,Flood,Flood (General),Arusha,,Arusha,-2.971649,35.922795,12.0,5000.0,,2015-0205,GDIS (PEND) + EM-DAT
+2015,2015-05-07,Flood,Flood (General),Dar Es Salaam,,Dar Es Salaam,-6.888154,39.263435,12.0,5000.0,,2015-0205,GDIS (PEND) + EM-DAT
+2015,2015-05-07,Flood,Flood (General),Kagera,,Kagera,-1.878947,31.453917,12.0,5000.0,,2015-0205,GDIS (PEND) + EM-DAT
+2015,2015-05-07,Flood,Flood (General),Kilimanjaro,,Kilimanjaro,-3.76321,37.639993,12.0,5000.0,,2015-0205,GDIS (PEND) + EM-DAT
+2015,2015-05-07,Flood,Flood (General),Tanga,,Tanga,-5.217677,38.281644,12.0,5000.0,,2015-0205,GDIS (PEND) + EM-DAT
+2015,2015-05-07,Flood,Flood (General),Tanzania (national),,Tanzania (national),,,12.0,5000.0,Flood (General),,EM-DAT (CRED)
+2016,2016-01-17,Flood,Flash flood,Tanzania (national),,Tanzania (national),,,,53446.0,Flash flood,,EM-DAT (CRED)
+2016,2016-01-17,Flood,Flood (General),Tanzania (national),,Tanzania (national),,,16.0,86829.0,Flood (General),,EM-DAT (CRED)
+2017,2017-03-15,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,7.0,,Riverine flood,,EM-DAT (CRED)
+2018,2018-03-09,Flood,Flood,"Dar es Salam, Arusha, Kilimanjaro, Tanga, Manyara, Tabora, Singida, Pwani, Kagera, Mtwara, Dodoma, Mwanza and Morogoro",,,,,33.0,20253.0,,,FloodList
+2018,2018-04-14,Flood,Flood (General),Tanzania (national),,Tanzania (national),,,15.0,15873.0,Flood (General),,EM-DAT (CRED)
+2019,2019-05-08,Flood,Flood,Dar es Salaam,Kinondoni Municipality,,,,,3745.0,,,FloodList
+2019,2019-05-08,Flood,Flood,Dar es Salaam,Ilala Municipality,,,,2.0,3565.0,,,FloodList
+2019,2019-05-08,Flood,Flood,Dar es Salaam,Temeke Municipality,,,,,270.0,,,FloodList
+2019,2019-10-12,Flood,Flood,Morogoro,,,,,11.0,,,,FloodList
+2019,2019-11-15,Flood,Flood,National,,,,,44.0,1113.0,,,FloodList
+2019,2019-10-13,Flood,Flood,Pwani,,,,,,,,,FloodList
+2019,2019-10-13,Flood,Flood,Tanga,,,,,18.0,,,,FloodList
+2019,2019-05-08,Flood,Flood (General),Tanzania (national),,Tanzania (national),,,37.0,5000.0,Flood (General),,EM-DAT (CRED)
+2019,2019-05-08,Flood,Riverine flood,Tanzania (national),,Tanzania (national),,,10.0,,Riverine flood,,EM-DAT (CRED)
+2020,2020-01-27,Flood,Flood,Iringa,Pawaga and Idodi,Tungamalenga,,,3.0,,Flash floods,,FloodList
+2020,2020-01-26,Flood,Flood,Lindi,Kilwa,"Njinjo , Kipindimbi, Kisimamkika, Mitole, Kikole,
+Ruhatwe, Mavuji, Mchakama, Nakiu, Nakangaga, Nanjirinji B, Kiranjeranje and Likawage",,,,4500.0,Heavy rain,,FloodList
+2020,2020-01-29,Flood,Flood,Lindi,"Liwale, Ruangwa",,,,21.0,20980.0,,,FloodList
+2020,2020-01-27,Flood,Flash flood,Tanzania (national),,Tanzania (national),,,41.0,28258.0,Flash flood,,EM-DAT (CRED)
+2020,2020-01-27,Flood,Flood (General),Tanzania (national),,Tanzania (national),,,2.0,36823.0,Flood (General),,EM-DAT (CRED)
+2021,2021-11-01,Drought,Drought,Tanzania (national),,Tanzania (national),,,,2100000.0,Drought,,EM-DAT (CRED)
+2021,2021-01-11,Flood,Flash flood,Tanzania (national),,Tanzania (national),,,1.0,2000.0,Flash flood,,EM-DAT (CRED)
+2022,2022-04-28,Flood,Flood (General),Tanzania (national),,Tanzania (national),,,10.0,3500.0,Flood (General),,EM-DAT (CRED)
+2023,2023-10-15,Flood,Flood (General),Tanzania (national),,Tanzania (national),,,51.0,2898500.0,Flood (General),,EM-DAT (CRED)
+2024,2024-04-07,Flood,Flash flood,Tanzania (national),,Tanzania (national),,,155.0,200236.0,Flash flood,,EM-DAT (CRED)
+2024,2024-04-07,Flood,Flood (General),Tanzania (national),,Tanzania (national),,,9.0,140.0,Flood (General),,EM-DAT (CRED)
+2025,2025-02-01,Flood,Flood (General),Tanzania (national),,Tanzania (national),,,26.0,3150.0,Flood (General),,EM-DAT (CRED)
+2018,2018-04-14,Flood,Flood,Dar es Salaam,,,,,,,,,FloodList
+2018,2018-04-14,Flood,Flood,Mara,Rorya,,,,,665.0,,,FloodList
+2018,2018-04-14,Flood,Flood,Mara,Musoma Rural,"Sungaji ward, Kilimanjaro village",,,,448.0,,,FloodList
+2018,2018-04-14,Flood,Flood,Mvomero,,,,,,,,,FloodList
+2018,2018-04-14,Flood,Flood,Mwanza,,,,,,,,,FloodList
